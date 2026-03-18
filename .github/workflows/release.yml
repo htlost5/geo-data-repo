@@ -8,16 +8,19 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: release-gh-pages
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout gh-pages
+      - name: Checkout main
         uses: actions/checkout@v4
         with:
-          ref: gh-pages
-          fetch-depth: 0
+          ref: main
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -33,33 +36,34 @@ jobs:
       - name: Build release
         run: node scripts/build-release.js ${{ steps.version.outputs.version }}
 
-      - name: Commit releases
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path : gh-pages
+          fetch-depth: 0
+
+      - name: Copy release to gh-pages
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-
-          git pull --rebase origin gh-pages
-
-          git add releases/${{ steps.version.outputs.version }}
-          git commit -m "release ${{ steps.version.outputs.version }}" || echo "No changes"
+          rm -rf gh-pages/releases/${{ steps.version.outputs.version }}
+          mkdir -p gh-pages/releases/${{ steps.version.outputs.version }}
           
-          git push origin gh-pages || (
-            git pull --rebase origin gh-pages &&
-            git push origin gh-pages
-          )
+          cp -r releases/${{ steps.version.outputs.version }}/* gh-pages/releases/${{ steps.version.outputs.version }}/
 
       - name: Update latest.json
         run: |
           node scripts/update-latest.js ${{ steps.version.outputs.version }}
-
-      - name: Commit latest
-        run: |
-          git add meta/latest.json
-          git commit -m "update latest -> ${{ steps.version.outputs.version }}" || echo "No changes"
+          rm -f gh-pages/meta/latest.json
+          mkdir -p gh-pages/meta
           
-          git pull --rebase origin gh-pages
+          cp meta/latest.json gh-pages/meta/latest.json
 
-          git push origin gh-pages || (
-            git pull --rebase origin gh-pages &&
-            git push origin gh-pages
-          )
+      - name: Commit & Push
+        working-directory: gh-pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "actions@github.com"
+
+          git add releases meta
+          git commit -m "Release ${{ steps.version.outputs.version }}" || echo "No changes to commit"
+          git push origin gh-pages
