@@ -9,7 +9,7 @@ if (!version) {
   process.exit(1);
 }
 
-const SRC_DIR = path.join(__dirname, '..', 'src');
+const SRC_DIR = path.join(__dirname, '..', 'src', 'imdf');
 const RELEASE_DIR = path.join(__dirname, '..', 'releases', version);
 
 function copyRecursive(src, dest) {
