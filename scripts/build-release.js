@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const crypto = require('crypto');
 const { generateManifest } = require('./generate-manifest');
 
 const version = process.argv[2];
@@ -10,7 +9,9 @@ if (!version) {
 }
 
 const SRC_DIR = path.join(__dirname, '..', 'src', 'imdf');
-const RELEASE_DIR = path.join(__dirname, '..', 'releases', version);
+
+const RELEASE_ROOT = path.join(__dirname, '..', 'releases', version);
+const RELEASE_IMDF_DIR = path.join(RELEASE_ROOT, 'imdf');
 
 function copyRecursive(src, dest) {
   if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
@@ -30,13 +31,13 @@ function copyRecursive(src, dest) {
 }
 
 // 1. copy src -> releases/version
-copyRecursive(SRC_DIR, RELEASE_DIR);
+copyRecursive(SRC_DIR, RELEASE_IMDF_DIR);
 
 // 2. generate manifest
-const manifest = generateManifest(RELEASE_DIR, version);
+const manifest = generateManifest(RELEASE_ROOT, version);
 
 fs.writeFileSync(
-  path.join(RELEASE_DIR, 'manifest.json'),
+  path.join(RELEASE_ROOT, 'manifest.json'),
   JSON.stringify(manifest, null, 2)
 );
 
