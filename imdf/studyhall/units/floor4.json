@@ -1,0 +1,1066 @@
+{
+  "type": "FeatureCollection",
+  "version": "1.0.0",
+  "name": "study_floor4",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "id": "f7944f71-19bc-44a6-be27-05f905cd42f4",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67791392098144, 35.49818394161772],
+            [139.67793293131564, 35.49818394160599],
+            [139.6780074089707, 35.498183941531195],
+            [139.67800740883106, 35.498112811361835],
+            [139.67791392092423, 35.49811281113578],
+            [139.67791392098144, 35.49818394161772]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "classroom",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "教室S58",
+          "en": "classroom S58"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67796066489225, 35.49814837641833]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "27721a19-2bd9-458d-b2ff-01ef2aee2cf6",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.6780074089707, 35.498183941531195],
+            [139.67810815563715, 35.49818394135688],
+            [139.67810815540872, 35.49811281150228],
+            [139.67800740883106, 35.49811281104927],
+            [139.6780074089707, 35.498183941531195]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "classroom",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "教室S47",
+          "en": "classroom S47"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67805778213787, 35.49814837636513]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "17b292fe-cffe-4b56-b5da-81b770e08978",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67810815563715, 35.49818394135688],
+            [139.67821357269472, 35.4981839410844],
+            [139.67821357237332, 35.498112810238304],
+            [139.67810815540872, 35.49811281150228],
+            [139.67810815563715, 35.49818394135688]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "classroom",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "教室S46",
+          "en": "classroom S46"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67816086415093, 35.49814837605069]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "ed2c1e31-265c-45c1-9010-7ba31024cc7c",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67821357269472, 35.4981839410844],
+            [139.67831433118357, 35.49818394073788],
+            [139.67831433077336, 35.49811281122617],
+            [139.67821357237332, 35.498112810238304],
+            [139.67821357269472, 35.4981839410844]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "classroom",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "教室S55",
+          "en": "classroom S55"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67826395159872, 35.498148375826915]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "4a7cbde7-ddf1-47d5-9582-56dac5455cef",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67831433118357, 35.49818394073788],
+            [139.6784150825023, 35.49818394030726],
+            [139.6784150820033, 35.4981128119115],
+            [139.67831433077336, 35.498112811884184],
+            [139.67831433118357, 35.49818394073788]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "classroom",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "教室S54",
+          "en": "classroom S54"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67836470656158, 35.498148376215426]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "65010b2c-69ed-4121-9300-e0c969eb0877",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.6784150825023, 35.49818394030726],
+            [139.67851806558275, 35.49818393978017],
+            [139.678518064993, 35.498112812772],
+            [139.6784150820033, 35.498112810795554],
+            [139.6784150825023, 35.49818394030726]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "classroom",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "教室S53",
+          "en": "classroom S53"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67846657346828, 35.498148375918966]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "87829c8b-496e-4cc7-a4d8-090e3d60f937",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67851806558278, 35.498183943448424],
+            [139.67862045134706, 35.498183942837244],
+            [139.67862045066698, 35.49811281216082],
+            [139.678518064993, 35.498112812772],
+            [139.67851806558278, 35.498183943448424]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "classroom",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "教室S52",
+          "en": "classroom S52"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67856925814746, 35.49814837780985]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "0355151b-854e-4c7b-9761-4674eb39feac",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67862045134703, 35.498183939168975],
+            [139.67870135729072, 35.49818394229284],
+            [139.6787182632476, 35.4981839421718],
+            [139.6787182624813, 35.49811281149539],
+            [139.67862045066698, 35.49811281216082],
+            [139.67862045134703, 35.498183939168975]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "classroom",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "教室S41",
+          "en": "classroom S41"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.6786693574041, 35.49814837641449]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "2aff1e74-9493-4de8-bb63-8b6bf9b475c6",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67871826347957, 35.49820547485257],
+            [139.6787182632476, 35.4981839421718],
+            [139.67870135729072, 35.49818394229284],
+            [139.67870135751815, 35.49820547497361],
+            [139.67871826347957, 35.49820547485257]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "emergency_room",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "避難口",
+          "en": "evacuation exit"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67870981038402, 35.49819470857319]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "6865d82c-06e9-4acc-9267-25328cf867f3",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67791392099878, 35.49820547796676],
+            [139.677932931338, 35.49820547795505],
+            [139.67793293131564, 35.49818394160599],
+            [139.67791392098144, 35.49818394161772],
+            [139.67791392099878, 35.49820547796676]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "emergency_area",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "避難口",
+          "en": "evacuation exit"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67792342615846, 35.49819470978685]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "de3c8861-43e0-4c88-af5d-66d4d0a74c16",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67806504531822, 35.49820547779081],
+            [139.67805694285911, 35.49820547780505],
+            [139.6780569430424, 35.49827660848039],
+            [139.67806504550867, 35.498276608466156],
+            [139.67806504531822, 35.49820547779081]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "concrete",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "壁",
+          "en": "wall"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67806099418212, 35.498241043140844]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "3940c632-5372-4661-81a4-0eabca9ed82c",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67801563291133, 35.49820547786917],
+            [139.67798149512, 35.49820547791148],
+            [139.67798149513354, 35.49821372492021],
+            [139.67798149516742, 35.49823437576106],
+            [139.67798149518282, 35.49824374512403],
+            [139.67800090759337, 35.498243745101135],
+            [139.67801563299037, 35.498243745081716],
+            [139.67801563291133, 35.49820547786917]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "vending_area",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "自販機",
+          "en": "vending"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67799856405114, 35.49822461149841]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "7da4f1f3-052f-4494-9cab-01fc585d38e0",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67801563299037, 35.498243745081716],
+            [139.67800090759337, 35.498243745101135],
+            [139.67800090765527, 35.49827660856395],
+            [139.6780156330582, 35.49827660854451],
+            [139.67801563299037, 35.498243745081716]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "concrete",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "壁",
+          "en": "wall"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.6780082703243, 35.49826017682393]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "b73de81d-2fa4-452c-a413-f99f52514a4c",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67793893982326, 35.49823437580029],
+            [139.67793893984245, 35.49825158483427],
+            [139.677953436721, 35.498251584822604],
+            [139.67795343675343, 35.498276608614376],
+            [139.67800090765527, 35.49827660856395],
+            [139.67800090759337, 35.498243745101135],
+            [139.67798149518282, 35.49824374512403],
+            [139.67798149516742, 35.49823437576106],
+            [139.67795343669874, 35.49823437578861],
+            [139.67793893982326, 35.49823437580029]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "restroom_female",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "女子トイレ",
+          "en": "female's restroom"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.6779722111049, 35.498255428104706]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "86fea205-71a8-4f79-84da-419685e71b01",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67795343667203, 35.49821372494776],
+            [139.67795343669874, 35.49823437578861],
+            [139.67798149516742, 35.49823437576106],
+            [139.67798149513354, 35.49821372492021],
+            [139.67795343667203, 35.49821372494776]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "restroom_accessible",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "多目的トイレ",
+          "en": "accessible restroom"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67796746591793, 35.49822405035485]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "d8585c02-a455-48f0-a239-20850388a573",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67793893979106, 35.49820547795071],
+            [139.677932931338, 35.49820547795505],
+            [139.67791392099878, 35.49820547796676],
+            [139.677913921056, 35.49827660864211],
+            [139.67795343675343, 35.498276608614376],
+            [139.677953436721, 35.498251584822604],
+            [139.67793893984245, 35.49825158483427],
+            [139.67793893982326, 35.498234375800294],
+            [139.67793893979106, 35.49820547795071]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "restroom_male",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "男子トイレ",
+          "en": "male's restroom"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67792977602127, 35.498244946928814]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "1b53f22b-c578-41fa-8376-00f384a0792f",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67856546179027, 35.49820547585707],
+            [139.67855735932602, 35.49820547590492],
+            [139.67855735995047, 35.498276606580255],
+            [139.67856546242186, 35.49827660653242],
+            [139.67856546179027, 35.49820547585707]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "concrete",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "壁",
+          "en": "wall"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67856141087216, 35.498241041223885]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "0c00e79b-f0fe-428e-8394-c3769da71968",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67861327875391, 35.49827660623902],
+            [139.67862894474047, 35.49827660613875],
+            [139.6786289444986, 35.49825158234698],
+            [139.6786481177896, 35.49825158222153],
+            [139.678648117712, 35.4982437425505],
+            [139.67861327844264, 35.498243742776204],
+            [139.67861327875391, 35.49827660623902]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "concrete",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "壁",
+          "en": "wall"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67862504809213, 35.49825734696557]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "71becf97-8977-4f02-9706-bec6a4fae2d7",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67862171129522, 35.49820547550996],
+            [139.6786132780802, 35.49820547556367],
+            [139.67861327820046, 35.49821817553355],
+            [139.67862171141684, 35.49821817547984],
+            [139.67862171141684, 35.49821817547984],
+            [139.67862171129522, 35.49820547550996]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "concrete",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "壁",
+          "en": "wall"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67861749474818, 35.49821182552193]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "cf64b612-59d5-412a-bab9-3d4f99424835",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67864811745875, 35.49821817530785],
+            [139.67862171141684, 35.49821817547984],
+            [139.67861327820046, 35.49821817553355],
+            [139.67861327844264, 35.498243742776204],
+            [139.678648117712, 35.4982437425505],
+            [139.6786481176192, 35.498234373183486],
+            [139.67864811745875, 35.49821817530785]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "elevator",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "エレベータ",
+          "en": "elevator"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.6786306979535, 35.498230959042935]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "ba688ff6-8ab4-403f-bd40-8ff54a424547",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67867734489406, 35.49820547514084],
+            [139.67864811733298, 35.49820547533796],
+            [139.6786481174256, 35.49821482825081],
+            [139.6786773449901, 35.4982148280537],
+            [139.67867734489406, 35.49820547514084]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "concrete",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "壁",
+          "en": "wall"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.6786627311607, 35.49821015169592]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "5b2a795c-6842-4a00-8552-c7526eb133be",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.6786773449901, 35.4982148280537],
+            [139.6786481174256, 35.49821482825081],
+            [139.67864811745875, 35.498218175307855],
+            [139.6786481176192, 35.498234373183486],
+            [139.67867734519072, 35.498234372986374],
+            [139.67867734519072, 35.498234372986374],
+            [139.6786773449901, 35.4982148280537]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "restroom_accessible",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "多目的トイレ",
+          "en": "accessible restroom"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.6786627313064, 35.49822460061898]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "d041668c-34d9-4434-a77e-d55c9b275e5f",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67869221785674, 35.49823437288335],
+            [139.67867734519072, 35.498234372986374],
+            [139.6786481176192, 35.498234373183486],
+            [139.6786481177896, 35.49825158222153],
+            [139.6786289444986, 35.49825158234698],
+            [139.67862894474047, 35.49827660613875],
+            [139.6786773456243, 35.49827660581618],
+            [139.67867734536736, 35.498251582024416],
+            [139.67869221803656, 35.498251581921394],
+            [139.67869221785674, 35.49823437288335]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "restroom_female",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "女子トイレ",
+          "en": "female's restroom"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67865970258833, 35.49825595954867]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "01717a3c-d421-4191-8e11-7d93afdef988",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67871826347957, 35.49820547485257],
+            [139.67870135751815, 35.49820547497361],
+            [139.67869230940533, 35.49820547503718],
+            [139.67869221803656, 35.498251581921394],
+            [139.67867734536736, 35.498251582024416],
+            [139.6786773456243, 35.49827660581618],
+            [139.67871826424587, 35.49827660552791],
+            [139.67871826347957, 35.49820547485257]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "restroom_male",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "男子トイレ",
+          "en": "male's restroom"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67870182761848, 35.49824491960592]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "abe65fb6-e361-434b-b1e7-241398b75a03",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67821344536594, 35.49827660810919],
+            [139.67841508315243, 35.498276607331654],
+            [139.67841508270348, 35.49821292903585],
+            [139.6782135728235, 35.49821292977306],
+            [139.67821344536594, 35.49827660810919]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "terrace",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "テラス",
+          "en": "terrace"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67831429599747, 35.498244771929635]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "3a31844c-abd8-4d9b-84a3-14a5d6627218",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.6780156330582, 35.49827660854451],
+            [139.6780569430424, 35.49827660848039],
+            [139.67805694285911, 35.498205477805044],
+            [139.67801563291133, 35.49820547786917],
+            [139.6780156330582, 35.49827660854451]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "stairs",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "階段",
+          "en": "stairs"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67803628796776, 35.49824104318]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "42ccaa04-c99b-4475-86b7-708969801b33",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67856546242186, 35.4982766065324],
+            [139.67861327875391, 35.49827660623899],
+            [139.6786132780802, 35.49820547556367],
+            [139.67856546179027, 35.498205475857056],
+            [139.67856546242186, 35.4982766065324]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "stairs",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "階段",
+          "en": "stairs"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67858937026156, 35.49824104105325]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "01053303-6590-4cfe-84d5-1625f26a0bd1",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67806504531822, 35.49820547779082],
+            [139.6780650455087, 35.498276608466156],
+            [139.67811388091366, 35.498276575882535],
+            [139.67811388070132, 35.49820547770318],
+            [139.67806504531822, 35.49820547779082]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "locker_room",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "ロッカースペースS42",
+          "en": "locker S42"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67808946125086, 35.49824103496396]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "632e3cf3-370b-4a91-983b-e906792155e5",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67851319347548, 35.49820548373431],
+            [139.67851319403985, 35.49827660682276],
+            [139.6785572192927, 35.49827660658113],
+            [139.6785573593261, 35.49820548349188],
+            [139.67851319347548, 35.49820548373431]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "locker_room",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "ロッカースペースS41",
+          "en": "locker S41"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67853524155205, 35.49824102625964]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "8001052b-33e7-4969-b45f-56e52d0db2ae",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67811388091366, 35.498276575882535],
+            [139.67821344536594, 35.49827660810919],
+            [139.6782134797339, 35.49820550994106],
+            [139.67811388070132, 35.49820547770318],
+            [139.67811388091366, 35.498276575882535]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "information_lounge",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "情報ラウンジS41",
+          "en": "information launge S41"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.6781636716792, 35.49824104085155]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "68154291-228e-4224-a866-10e529e73cf3",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67851319403985, 35.49827660682276],
+            [139.67851319347548, 35.49820548373431],
+            [139.6784150826745, 35.49820548421508],
+            [139.67841508315243, 35.498276607331654],
+            [139.67851319403985, 35.49827660682276]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "information_lounge",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "情報ラウンジS41",
+          "en": "information launge S41"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67846413833234, 35.498241045531174]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    },
+    {
+      "id": "0e010fee-986e-4551-84bd-1bae91e94b16",
+      "type": "Feature",
+      "feature_type": "unit",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67795343667203, 35.49821372494776],
+            [139.67798149513354, 35.49821372492021],
+            [139.67798149512, 35.49820547791147],
+            [139.67795343666137, 35.49820547793899],
+            [139.67795343667203, 35.49821372494776]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "concrete",
+        "restriction": null,
+        "accessibility": null,
+        "name": {
+          "ja": "壁",
+          "en": "wall"
+        },
+        "alt_name": null,
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.67796746589673, 35.49820960142968]
+        },
+        "level_id": "5f99c3b9-cfe2-4f8c-b3a1-2438304cd3ec"
+      }
+    }
+  ]
+}
