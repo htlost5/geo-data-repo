@@ -11,7 +11,7 @@ const latestPath = path3.join(__dirname, '..', 'meta', 'latest.json');
 
 const latest = {
   version: versionArg,
-  manifest: `/releases/${versionArg}/manifest.json`
+  srcFolder: `/releases/${versionArg}`
 };
 
 fs3.writeFileSync(latestPath, JSON.stringify(latest, null, 2));

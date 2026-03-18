@@ -13,10 +13,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout gh-pages
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: gh-pages
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -36,15 +37,22 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
+
+          git pull --rebase origin gh-pages
+
           git add releases/${{ steps.version.outputs.version }}
           git commit -m "release ${{ steps.version.outputs.version }}" || echo "No changes"
-          git push
+          
+          git push origin gh-pages
 
       - name: Update latest.json
         run: node scripts/update-latest.js ${{ steps.version.outputs.version }}
 
       - name: Commit latest
         run: |
+          git pull --rebase origin gh-pages
+
           git add meta/latest.json
           git commit -m "update latest -> ${{ steps.version.outputs.version }}" || echo "No changes"
-          git push
+          
+          git push origin gh-pages
