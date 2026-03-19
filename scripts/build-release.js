@@ -64,3 +64,8 @@ async function main() {
 
   console.log(`Release ${version} built.`);
 }
+
+main().catch(err => {
+  console.error(err);
+  process.exit(1);
+});
