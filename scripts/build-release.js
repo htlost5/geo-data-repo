@@ -9,8 +9,10 @@ if (!version) {
   process.exit(1);
 }
 
-const SRC_DIR = path.join(__dirname, '..', 'src', 'imdf');
+// mainブランチ側のpath設定
+const SRC_DIR = path.join(__dirname, '..', 'build', 'imdf');
 
+// gh-pages(releases)ブランチ側のpath設定
 const RELEASE_ROOT = path.join(__dirname, '..', 'releases', version);
 const DATA_DIR = path.join(RELEASE_ROOT, 'data');
 const DATA_IMDF_DIR = path.join(DATA_DIR, 'imdf');
