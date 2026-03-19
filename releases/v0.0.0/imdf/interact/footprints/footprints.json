@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "3102b655-c8fa-4419-a8a8-e4f1d1e2d1d7",
+      "type": "Feature",
+      "feature_type": "footprint",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.677872936215579, 35.497859996980715],
+            [139.677872937321752, 35.497607182907551],
+            [139.67901914228537, 35.497607180817241],
+            [139.679019144770365, 35.497859994890398],
+            [139.677872936215579, 35.497859996980715]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "ground",
+        "name": null,
+        "building_ids": ["a1df2a1e-9838-458f-ab73-33d77c56d4db"]
+      }
+    }
+  ]
+}
