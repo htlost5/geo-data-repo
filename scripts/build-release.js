@@ -2,7 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const archiver = require('archiver');
 const { generateManifest } = require('./generate-manifest');
-const { resolve } = require('dns');
 
 const version = process.argv[2];
 if (!version) {
@@ -13,8 +12,9 @@ if (!version) {
 const SRC_DIR = path.join(__dirname, '..', 'src', 'imdf');
 
 const RELEASE_ROOT = path.join(__dirname, '..', 'releases', version);
-const RELEASE_IMDF_DIR = path.join(RELEASE_ROOT, 'imdf');
-const MANIFEST_PATH = path.join(RELEASE_ROOT, 'manifest.json');
+const DATA_DIR = path.join(RELEASE_ROOT, 'data');
+const DATA_IMDF_DIR = path.join(DATA_DIR, 'imdf');
+const MANIFEST_PATH = path.join(DATA_DIR, 'manifest.json');
 const ZIP_PATH = path.join(RELEASE_ROOT, `imdf-${version}.zip`);
 
 function copyRecursive(src, dest) {
@@ -34,7 +34,7 @@ function copyRecursive(src, dest) {
   }
 }
 
-function createZip(zipPath, imdfDir, manifestPath) {
+function createZip(zipPath, dataDir) {
   return new Promise((resolve, reject) => {
     const output = fs.createWriteStream(zipPath);
     const archive = archiver('zip', { zlib: { level: 9 } });
@@ -45,9 +45,7 @@ function createZip(zipPath, imdfDir, manifestPath) {
 
     archive.pipe(output);
 
-    // zip内にimdf/ と manifest.json を入れる
-    archive.directory(imdfDir, 'imdf');
-    archive.file(manifestPath, { name: 'manifest.json' });
+    archive.directory(dataDir, 'data');
 
     archive.finalize();
   })
@@ -55,12 +53,13 @@ function createZip(zipPath, imdfDir, manifestPath) {
 
 
 async function main() {
-  copyRecursive(SRC_DIR, RELEASE_IMDF_DIR);
+  fs.mkdirSync(DATA_DIR, { recursive: true });
+  copyRecursive(SRC_DIR, DATA_IMDF_DIR);
 
   const manifest = generateManifest(RELEASE_ROOT, version);
   fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
 
-  await createZip(ZIP_PATH, RELEASE_IMDF_DIR, MANIFEST_PATH);
+  await createZip(ZIP_PATH, DATA_DIR);
 
   console.log(`Release ${version} built.`);
 }
