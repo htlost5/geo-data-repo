@@ -1,6 +1,8 @@
 const fs = require('fs');
 const path = require('path');
+const archiver = require('archiver');
 const { generateManifest } = require('./generate-manifest');
+const { resolve } = require('dns');
 
 const version = process.argv[2];
 if (!version) {
@@ -12,6 +14,8 @@ const SRC_DIR = path.join(__dirname, '..', 'src', 'imdf');
 
 const RELEASE_ROOT = path.join(__dirname, '..', 'releases', version);
 const RELEASE_IMDF_DIR = path.join(RELEASE_ROOT, 'imdf');
+const MANIFEST_PATH = path.join(RELEASE_ROOT, 'manifest.json');
+const ZIP_PATH = path.join(RELEASE_ROOT, `imdf-${version}.zip`);
 
 function copyRecursive(src, dest) {
   if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
@@ -30,15 +34,33 @@ function copyRecursive(src, dest) {
   }
 }
 
-// 1. copy src -> releases/version
-copyRecursive(SRC_DIR, RELEASE_IMDF_DIR);
+function createZip(zipPath, imdfDir, manifestPath) {
+  return new Promise((resolve, reject) => {
+    const output = fs.createWriteStream(zipPath);
+    const archive = archiver('zip', { zlib: { level: 9 } });
 
-// 2. generate manifest
-const manifest = generateManifest(RELEASE_ROOT, version);
+    output.on('close', () => resolve());
+    output.on('error', reject);
+    archive.on('error', reject);
 
-fs.writeFileSync(
-  path.join(RELEASE_ROOT, 'manifest.json'),
-  JSON.stringify(manifest, null, 2)
-);
+    archive.pipe(output);
 
-console.log(`Release ${version} built.`);
+    // zip内にimdf/ と manifest.json を入れる
+    archive.directory(imdfDir, 'imdf');
+    archive.file(manifestPath, { name: 'manifest.json' });
+
+    archive.finalize();
+  })
+}
+
+
+async function main() {
+  copyRecursive(SRC_DIR, RELEASE_IMDF_DIR);
+
+  const manifest = generateManifest(RELEASE_ROOT, version);
+  fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
+
+  await createZip(ZIP_PATH, RELEASE_IMDF_DIR, MANIFEST_PATH);
+
+  console.log(`Release ${version} built.`);
+}
