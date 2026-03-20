@@ -12,7 +12,7 @@ from qgis.core import (
 # 設定
 # -----------------------------
 INPUT_ROOT = r"D:\htlost5_projects\geo-data-repo\QGIS\working"
-OUTPUT_ROOT = r"D:\htlost5_projects\geo-data-repo\exports\raw"
+OUTPUT_ROOT = r"D:\htlost5_projects\geo-data-repo\exports\build"
 
 TARGET_CRS = QgsCoordinateReferenceSystem("EPSG:4326")
 TRANSFORM_CONTEXT = QgsProject.instance().transformContext()

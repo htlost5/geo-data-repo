@@ -1,52 +1,52 @@
-// transform-geojson-to-json-full.js
+// transform-geojson-to-json-gha.js
 const fs = require('fs');
 const path = require('path');
 
-// 入力: GeoJSONが置かれている場所
-const INPUT_ROOT = 'D:\\htlost5_projects\\geo-data-repo\\exports\\raw';
+// -----------------------------
+// 入力・出力パス
+// -----------------------------
+const INPUT_BUILD = path.join(__dirname, '..', 'exports', 'build'); // GitHub Actions用
+const INPUT_BASE  = path.join(__dirname, '..', 'exports', 'base');  // venue / address.json
+const OUTPUT_ROOT = path.join(__dirname, '..', 'build', 'imdf');     // 出力先
 
-// 出力: JSONを書き込む場所
-const OUTPUT_ROOT = 'D:\\htlost5_projects\\geo-data-repo\\build\\imdf';
-
-// 変更しないもの
-const PRESERVE_FILES = new Set(['address.json']);
-const PRESERVE_DIRS = new Set(['venue']);
-
+// -----------------------------
 // root直下に出す footprint 系の名前
-// interact の表記が tree では "foorprint.json" になっていますが、
-// もし誤記なら 'footprint.json' に直してください。
+// -----------------------------
 const FOOTPRINT_OUTPUT_NAME = {
   studyhall: 'footprint.json',
-  interact: 'footprint.json', // ← tree を厳密に再現したいなら 'foorprint.json'
+  interact:  'footprint.json', // tree に合わせて必要なら 'foorprint.json'
 };
 
 // -----------------------------
-// 出力先を空にする（address.json と venue は残す）
+// 出力先を空にする（venue, address.jsonは残さず上書き）
 // -----------------------------
 function cleanOutputRoot(dir) {
   if (!fs.existsSync(dir)) return;
-
   const entries = fs.readdirSync(dir, { withFileTypes: true });
   for (const entry of entries) {
-    const fullPath = path.join(dir, entry.name);
+    fs.rmSync(path.join(dir, entry.name), { recursive: true, force: true });
+    console.log(`[REMOVED] ${entry.name}`);
+  }
+}
 
-    if (entry.isDirectory()) {
-      if (PRESERVE_DIRS.has(entry.name)) {
-        console.log(`[SKIP DIR] ${fullPath}`);
-        continue;
-      }
-      fs.rmSync(fullPath, { recursive: true, force: true });
-      console.log(`[REMOVED DIR] ${fullPath}`);
-      continue;
-    }
+// -----------------------------
+// exports/base の venue と address.json をコピー
+// -----------------------------
+function copyBaseFiles() {
+  // address.json
+  const baseAddress = path.join(INPUT_BASE, 'address.json');
+  if (fs.existsSync(baseAddress)) {
+    fs.mkdirSync(OUTPUT_ROOT, { recursive: true });
+    fs.copyFileSync(baseAddress, path.join(OUTPUT_ROOT, 'address.json'));
+    console.log('[COPIED] address.json');
+  }
 
-    if (PRESERVE_FILES.has(entry.name)) {
-      console.log(`[SKIP FILE] ${fullPath}`);
-      continue;
-    }
-
-    fs.unlinkSync(fullPath);
-    console.log(`[REMOVED FILE] ${fullPath}`);
+  // venue フォルダ
+  const baseVenue = path.join(INPUT_BASE, 'venue');
+  const outVenue  = path.join(OUTPUT_ROOT, 'venue');
+  if (fs.existsSync(baseVenue)) {
+    fs.cpSync(baseVenue, outVenue, { recursive: true });
+    console.log('[COPIED] venue/');
   }
 }
 
@@ -57,7 +57,7 @@ function transformGeoJSONFile(inputPath, outputPath) {
   const raw = fs.readFileSync(inputPath, 'utf8');
   const data = JSON.parse(raw);
 
-  if (data && Array.isArray(data.features)) {
+  if (Array.isArray(data.features)) {
     for (const feature of data.features) {
       if (feature?.properties && Object.prototype.hasOwnProperty.call(feature.properties, 'fid')) {
         delete feature.properties.fid;
@@ -65,9 +65,7 @@ function transformGeoJSONFile(inputPath, outputPath) {
     }
   }
 
-  const outDir = path.dirname(outputPath);
-  fs.mkdirSync(outDir, { recursive: true });
-
+  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
   fs.writeFileSync(outputPath, JSON.stringify(data, null, 2), 'utf8');
   console.log(`[OK] ${inputPath} -> ${outputPath}`);
 }
@@ -76,29 +74,24 @@ function transformGeoJSONFile(inputPath, outputPath) {
 // 入力パスから出力パスへ変換
 // -----------------------------
 function mapOutputPath(inputPath) {
-  const rel = path.relative(INPUT_ROOT, inputPath);
+  const rel = path.relative(INPUT_BUILD, inputPath);
   const parts = rel.split(path.sep);
-  const root = parts[0]; // studyhall / interact
+  const root = parts[0];
   const fileName = path.parse(parts[parts.length - 1]).name;
 
   if (!['studyhall', 'interact'].includes(root)) return null;
 
-  // address.json / venue は触らない
-  if (fileName.toLowerCase() === 'address' || root === 'venue') return null;
-
-  // studyhall / interact 直下の footprint.geojson
+  // root直下 footprint / stairs
   if (fileName === 'footprint' || fileName === 'foorprint') {
     return path.join(OUTPUT_ROOT, root, 'footprint.json');
   }
-
-  // stairs.geojson → root直下
   if (fileName === 'stairs') {
     return path.join(OUTPUT_ROOT, root, 'stairs.json');
   }
 
-  // floors/floorN/units.geojson -> units/floorN.json
+  // floors/floorN
   if (parts[1] === 'floors' && parts.length >= 3) {
-    const floorName = parts[2]; // floor1, floor2 ...
+    const floorName = parts[2];
     if (fileName.toLowerCase() === 'units') {
       return path.join(OUTPUT_ROOT, root, 'units', `${floorName}.json`);
     }
@@ -107,7 +100,7 @@ function mapOutputPath(inputPath) {
     }
   }
 
-  // levels 以下は従来通り
+  // levels 以下
   if (parts[1] === 'levels') {
     return path.join(OUTPUT_ROOT, root, 'levels', `${fileName}.json`);
   }
@@ -125,17 +118,11 @@ function walk(dir) {
     const fullPath = path.join(dir, entry.name);
 
     if (entry.isDirectory()) {
-      if (PRESERVE_DIRS.has(entry.name)) {
-        console.log(`[SKIP DIR] ${fullPath}`);
-        continue;
-      }
       walk(fullPath);
       continue;
     }
 
-    if (!entry.name.toLowerCase().endsWith('.geojson')) {
-      continue;
-    }
+    if (!entry.name.toLowerCase().endsWith('.geojson')) continue;
 
     const outputPath = mapOutputPath(fullPath);
     if (!outputPath) {
@@ -153,7 +140,10 @@ function walk(dir) {
 console.log('[START] Cleaning output...');
 cleanOutputRoot(OUTPUT_ROOT);
 
+console.log('[START] Copy base files...');
+copyBaseFiles();
+
 console.log('[START] Transforming .geojson -> .json...');
-walk(INPUT_ROOT);
+walk(INPUT_BUILD);
 
 console.log('[DONE]');
