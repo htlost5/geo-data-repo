@@ -9,8 +9,18 @@ Serve the GeoJson data.
 
 ### dev
 
+#### QGIS -> exports
+
+open the QGIS app and run the script **allExports1.py**
+
+#### exports -> build
+
+run the script **transform.js**
+
+#### build -> github 
+
 first settings
-1. set the tag
+1. set the tag in bash
 
    ```
    git tag v0.0.0
