@@ -47,7 +47,8 @@ function createZip(zipPath, dataDir) {
 
     archive.pipe(output);
 
-    archive.directory(dataDir);
+    archive.file(path.join(dataDir, 'manifest.json'), { name: 'manifest.json' });
+    archive.directory(path.join(dataDir, 'imdf'), 'imdf');
 
     archive.finalize();
   })
