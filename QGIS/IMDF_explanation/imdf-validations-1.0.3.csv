@@ -1,0 +1,359 @@
+feature,severity,rule,definition
+N/A,Info,ZeroCountOfUnitQualifiedAddresses,Validates that a delivery has at least one unit-qualified Address.
+N/A,Violation,FeatureIdMustBeString,Structural Validation: Validates that the feature id is a string. Complete validation of an Archive is predicated upon all structural validations being passed.
+N/A,Violation,FeatureIdMustBeUnique,Structural Validation: Validates that a feature has a unique ID. Complete validation of an Archive is predicated upon all structural validations being passed.
+N/A,Violation,FeatureIdMustNotBeEmpty,Structural Validation: Validates that the feature id is not an empty string. Complete validation of an Archive is predicated upon all structural validations being passed.
+N/A,Violation,FeatureMustHaveFeatureType,Structural Validation: Validates that the feature has a top-level feature_type field. Complete validation of an Archive is predicated upon all structural validations being passed.
+N/A,Violation,FeatureMustHaveId,Structural Validation: Validates that the feature has a top-level id field. Complete validation of an Archive is predicated upon all structural validations being passed.
+N/A,Violation,FeatureTypeMustBeString,Structural Validation: Validates that the feature type is a string. Complete validation of an Archive is predicated upon all structural validations being passed.
+N/A,Violation,FeatureTypeMustNotBeEmpty,Structural Validation: Validates that the feature has a non-empty feature type. Complete validation of an Archive is predicated upon all structural validations being passed.
+N/A,Violation,FileMustBeValidGeoJSON,"Structural Validation: Validates that a file is a valid GeoJSON. Checks include, amongst others: i) Self-intersection, where a line segment crosses a line segment. ii) Self-intersection, where a line segment overlaps a line segment. iii) Self-intersection, where vertices have the same x/y coordinates. Complete validation of an Archive is predicated upon all structural validations being passed."
+N/A,Violation,FileMustContainFeatureCollection,Structural Validation: Validates that the file contains a valid GeoJSON FeatureCollection. Complete validation of an Archive is predicated upon all structural validations being passed.
+N/A,Violation,ManifestFileMustBePresent,Structural Validation: Validates that a Manifest file is present in the delivery. Complete validation of an Archive is predicated upon all structural validations being passed.
+N/A,Violation,NameMustBeString,Validates that a name is a string data type.
+N/A,Violation,ReferencedFeatureIDMustBeResolvable,Structural Validation: Validates that a feature id reference is resolvable.
+N/A,Violation,VenueCountMustBeExactlyOne,Validates that a delivery contains only one Venue feature.
+Address,Violation,AddressMustBeReferenced,Validates that an Address record is referenced by a feature.
+Address,Violation,AddressMustHaveAddressLine,Validates that an Address has an address line.
+Address,Violation,AddressMustHaveCountryCode,Validates that an Address has a country code.
+Address,Violation,AddressMustHaveLocality,Validates that an Address has a locality.
+Address,Violation,AddressMustHaveProvinceCode,Validates that an Address has a Province code when defined by ISO for Country.
+Address,Violation,AddressUnitMustNotBeBlank,Validates that Address Unit is not blank. (Not empty string or whitespace.)
+Address,Violation,InvalidCountryCode,Validates that a country code is a valid ISO-3166 value.
+Address,Violation,InvalidFeatureID,Validates that a feature ID is a valid v4 UUID value.
+Address,Violation,InvalidISOCountryAndISOProvinceCodeCombination,Validates that the ISO Province code is valid for ISO the Country.
+Address,Violation,InvalidIsoProvinceCode,Validates that a province code is a valid ISO-3166-2 value.
+Address,Violation,LabelMustNotBeBlank,Validates that a Label (prefLabel and altLabel) is not blank.
+Address,Violation,PostalCodeExtensionMustNotBeBlank,Validates that postal_code_ext in Address is not blank. (Not empty string or whitespace.)
+Address,Violation,PostalCodeMustNotBeBlank,Validates that postal_code in an Address is not blank. (Not empty string or whitespace.)
+Address,Violation,VanityPostalCodeMustNotBeBlank,Validates that postal_code_vanity in Address is not blank. (Not empty string or whitespace.)
+Address,Warning,AddressHasDissimilarProvinceCode,Validates that Addresses do not have dissimilar province codes.
+Address,Warning,AddressMustBeDistinct,Validates that Addresses are distinct.
+Address,Warning,AddressShouldHavePostalCode,Validates that an Address has a postal_code.
+Amenity,Info,GenericRestroomUnitCategoryContainsSpecificRestroomAmenityCategory,"Validates that a 'restroom.family', 'restroom.female', 'restroom.male', 'restroom.transgender', or 'restroom.unisex' Amenity is not contained (or touched) by a 'restroom' Unit."
+Amenity,Violation,AccessibilityMustBeValid,Validates the accessibility category assigned to the feature.
+Amenity,Violation,AltNameMustBeString,Validates that an alt_name is a string data type.
+Amenity,Violation,AmenityCategoryMustBeValid,Validates the category assigned to an Amenity.
+Amenity,Violation,AmenityMustHaveCategory,Validates that an Amenity has a category value.
+Amenity,Violation,AmenityMustHavePointGeometry,Validates that an Amenity is a Point geometry.
+Amenity,Violation,AmenityMustReferenceUnit,Validates that an Amenity references a Unit.
+Amenity,Violation,CorrelationIdMustBeMatched,Validates that a correlation_id is matched by at least one other feature's correlation_id in the same feature-type.
+Amenity,Violation,HoursMustNotBeBlank,Validates that hours are not blank. (Not empty string or whitespace.)
+Amenity,Violation,InvalidCorrelationID,Validates that a 'correlation_id' is a valid v4 UUID value.
+Amenity,Violation,InvalidFeatureID,Validates that a feature ID is a valid v4 UUID value.
+Amenity,Violation,InvalidLanguageTag,Validates that a language tag is a valid value.
+Amenity,Violation,LabelMustNotBeBlank,Validates that a Label (prefLabel and altLabel) is not blank.
+Amenity,Violation,LevelIDsMustBeDissimilarForCorrelationID,"Validates that features from the same feature-type, whose correlation_id match, possess dissimilar Level id values."
+Amenity,Violation,NameMustBeString,Validates that a name is a string data type.
+Amenity,Violation,PhoneMustBeValid,Validates that the phone is correctly formatted.
+Amenity,Violation,WebsiteMustBeValid,Validates that a website URL is correctly formatted.
+Amenity,Warning,AircraftBoardingGateAmenityShouldHaveName,Validates that a 'boardinggate.aircraft' Amenity possesses a name.
+Amenity,Warning,AltNameLangTagHasNoCorrespondingNameLangTag,Validates that a language tag associated with an alt_name has a corresponding presence and association with a name value.
+Amenity,Warning,AmenityNameAndCategoryAreSame,Validates that an Amenity does not possess a category that matches the name.
+Amenity,Warning,AmenityNameShouldNotBeDuplicate,"Validates that names among Amenities with the same category ('arrivalgate', 'boardinggate.aircraft', 'boardinggate.bus' and 'boardinggate.train') are distinct."
+Amenity,Warning,AmenityShouldBeCoveredByReferencedUnit,Validates that an Amenity is covered by the referenced Unit.
+Amenity,Warning,AmenityShouldNotEqualAmenity,Validates that Amenities are not coincident on the same Level.
+Amenity,Warning,ArrivalGateAmenityShouldHaveName,Validates that an 'arrivalgate' Amenity possesses a name.
+Amenity,Warning,BaggageCarouselAmenityNameIsDuplicateInSameBuilding,Validates that 'baggagecarousel' Amenity names are distinct in the same Building.
+Amenity,Warning,BaggageCarouselAmenityShouldHaveName,Validates that a 'baggagecarousel' Amenity possesses a name.
+Amenity,Warning,BusBoardingGateAmenityShouldHaveName,Validates that a 'boardinggate.bus' Amenity possesses a name.
+Amenity,Warning,CategoryShouldBeSameForCorrelationID,Validates that features with matching correlation_id possess the same category.
+Amenity,Warning,ElevatorUnitMayOnlyContainElevatorAmenity,"Validates that an Amenity, if present and contained (or touched) by an 'elevator' Unit, is an 'elevator' Amenity and not any other category of Amenity."
+Amenity,Warning,EscalatorUnitMayOnlyContainEscalatorAmenity,"Validates that an Amenity, if present and contained (or touched) by an 'escalator' Unit, is an 'escalator' Amenity and not any other category of Amenity."
+Amenity,Warning,FemaleRestroomUnitMustNotContainRestroomAmenityCategory,"Validates that a 'restroom.family', 'restroom.male', 'restroom.transgender' or 'restroom.unisex' Amenity is not contained (or touched) by a 'restroom.female' Unit."
+Amenity,Warning,HasOnlyAltName,"Validates that an alt_name value is not exclusive, that it is accompanied by a name value."
+Amenity,Warning,KioskMustNotContainAmenityCategory,"Validates that an 'elevator', 'escalator', 'movingwalkway' or 'stairs' Amenity is not contained (or touched) by a Kiosk."
+Amenity,Warning,MaleRestroomUnitMustNotContainRestroomAmenityCategory,"Validates that a 'restroom.family', 'restroom.female', 'restroom.transgender' or 'restroom.unisex' Amenity is not contained (or touched) by a 'restroom.male' Unit."
+Amenity,Warning,MovingWalkwayUnitMayOnlyContainMovingWalkwayAmenity,"Validates that an Amenity, if present and contained (or touched) by a 'movingwalkway' Unit, is a 'movingwalkway' Amenity and not any other category of Amenity."
+Amenity,Warning,OpenToBelowUnitMustNotContainAmenity,Validates that an Amenity is not contained (or touched) by an 'opentobelow' Unit.
+Amenity,Warning,RestroomUnitCategoryShouldNotContainRestroomAmenityCategory,"Validates i) '*.female', '*.male', '*.transgender', '*.unisex' (plus *.wheelchair) Amenity is not contained (or touched) by a 'restroom.family' Unit. ii) '*.family', '*.female', '*.male', '*.transgender' (plus *.wheelchair) Amenity is not contained (or touched) by a 'restroom.unisex' Unit."
+Amenity,Warning,RestroomUnitMayOnlyContainAmenityFromRestroomHierarchy,"Validates that an Amenity, if present and contained (or touched) by a Unit whose category is in the Restroom hierarchy, also possesses a category from the Restroom hierarchy."
+Amenity,Warning,StairsUnitMayOnlyContainStairsAmenity,"Validates that an Amenity, if present and contained (or touched) by a 'stairs' Unit, is a 'stairs' Amenity and not any other category of Amenity."
+Amenity,Warning,StepsUnitMustNotContainAmenity,Validates that an Amenity is not contained (or touched) by a 'steps' Unit.
+Amenity,Warning,StructuralUnitMustNotContainAmenity,"Validates that an Amenity is not contained (or touched) by a Unit that models physical/structural elements, such as 'brick', 'column', 'concrete', 'drywall', 'glass', 'structure', and 'wood'."
+Amenity,Warning,TrainBoardingGateAmenityShouldHaveName,Validates that a 'boardinggate.train' Amenity possesses a name value.
+Amenity,Warning,UnspecifiedAmenityShouldHaveName,Validates that an 'unspecified' Amenity possesses a name.
+Anchor,Info,ReferencedAddressDoesNotMatchBuildingAddress,Validates that an Anchor's referenced Address (non-unit-qualified Address portion) matches the Building's Address.
+Anchor,Violation,AnchorMustBeCoveredByReferencedUnit,Validates that an Anchor is covered by the referenced Unit.
+Anchor,Violation,AnchorMustHavePointGeometry,Validates that an Anchor is a Point geometry.
+Anchor,Violation,AnchorMustReferenceUnit,Validates that an Anchor references a Unit.
+Anchor,Violation,InvalidFeatureID,Validates that a feature ID is a valid v4 UUID value.
+Anchor,Warning,AnchorShouldNotEqualAnchor,Validates that Anchors are not coincident on the same Level.
+Anchor,Warning,OpenToBelowUnitMustNotContainAnchor,Validates that an Anchor is not contained (or touched) by an 'opentobelow' Unit.
+Anchor,Warning,StructuralUnitMustNotContainAnchor,"Validates that an Anchor is not contained (or touched) by a Unit that models physical/structural elements, such as 'brick', 'column', 'concrete', 'drywall', 'glass', 'structure', and 'wood'."
+Building,Info,BuildingAddressResolvesToVenueAddress,Validates that a Building and Venue do not share the same Address.
+Building,Violation,AltNameMustBeString,Validates that an alt_name is a string data type.
+Building,Violation,BuildingCategoryMustBeValid,Validates the category assigned to a Building.
+Building,Violation,BuildingHasNoLevel,Validates that a Building is referenced by at least one Level.
+Building,Violation,BuildingMustHaveAtLeastOneFootprint,Validates that a Building has at least one Footprint defined.
+Building,Violation,BuildingMustHaveCategory,Validates that a Building has a category.
+Building,Violation,DisplayPointMustBePointGeometry,Validates that a display_point is a point geometry type.
+Building,Violation,InvalidFeatureID,Validates that a feature ID is a valid v4 UUID value.
+Building,Violation,InvalidLanguageTag,Validates that a language tag is a valid value.
+Building,Violation,LabelMustNotBeBlank,Validates that a Label (prefLabel and altLabel) is not blank.
+Building,Violation,NameMustBeString,Validates that a name is a string data type.
+Building,Violation,RestrictionCategoryMustBeValid,Validates the category assigned to a Restriction.
+Building,Warning,AltNameLangTagHasNoCorrespondingNameLangTag,Validates that a language tag associated with an alt_name has a corresponding presence and association with a name value.
+Building,Warning,BuildingAltNameShouldBeDistinct,Validates that a Building's alt_name is distinct.
+Building,Warning,BuildingCategoryShouldBeParking,Validates that a Building's category is 'parking' when all Level features referencing the Building possess the same category.
+Building,Warning,BuildingFootprintGeometryMustContainDisplayPoint,"Validates that the display_point, when present, is within at least one (1) Footprint that references the Building."
+Building,Warning,BuildingHasNoAddress,Validates that a Building references an Address.
+Building,Warning,BuildingHasNoAerialFootprint,Validates that a Building references an 'aerial' Footprint.
+Building,Warning,BuildingHasNoDisplayPoint,Validates that a Building has a display_point.
+Building,Warning,BuildingHasNoGroundFootprint,Validates that a Building references a 'ground' Footprint.
+Building,Warning,BuildingHasNoName,Validates that a Building has a name.
+Building,Warning,BuildingHasNoSubterraneanFootprint,Validates that a Building references a 'subterranean' Footprint when the Building is also referenced by a Level that possesses a negative ordinal.
+Building,Warning,BuildingLevelOrdinalZeroShouldBePresent,Validates that a Building is referenced by a Level whose ordinal 0.
+Building,Warning,BuildingNameIsNotDistinct,Validates that a Building name is distinct.
+Building,Warning,BuildingNameMatchesOccupantName,Validates that a Building name does not match an Occupant name it 'contains'.
+Building,Warning,BuildingReferencesUnitQualifiedAddress,Validates that the Building's referenced Address is not a unit-qualified address.
+Building,Warning,BuildingsHaveSameAddress,Validates that Buildings do not share the same Address.
+Building,Warning,HasOnlyAltName,"Validates that an alt_name value is not exclusive, that it is accompanied by a name value."
+Building,Warning,LevelNamesInBuildingShouldBeDistinct,Validates that Levels referencing the same Building possess dissimilar name values.
+Building,Warning,LevelOrdinalsForBuildingAreNotSequential,Validates that ordinal values among Levels referencing the same Building are sequential.
+Building,Warning,LevelShortNamesInBuildingShouldBeDistinct,Validates that Levels referencing the same Building possess dissimilar short_name values.
+Building,Warning,NonMatchingNameLangTagsAmongLevelsReferencingSameBuilding,Validates that a Level `name` language tag set is matched by another Level's `name` language tag set among Levels that reference the same Building.
+Building,Warning,NonMatchingShortNameLangTagsAmongLevelsReferencingSameBuilding,Validates that a Level short_name language tag set is matched by another Level's short_name language tag set among Levels that reference the same Building.
+Building,Warning,ParkingBuildingReferencingNonParkingLevel,Validates that a 'parking' Building is only referenced by a Level possessing the same category.
+Detail,Info,DetailMustNotIntersectOpening,Validates that a Detail does not intersect an Opening feature.
+Detail,Violation,DetailMustBeCoveredByReferencedLevel,Validates that a Detail feature is covered by the referenced Level.
+Detail,Violation,DetailMustHaveLinealGeometry,Validates that a Detail feature is a LineString or MultiLineString geometry.
+Detail,Violation,DetailMustReferenceLevel,Validates that a Detail references a Level.
+Detail,Violation,InvalidFeatureID,Validates that a feature ID is a valid v4 UUID value.
+Fixture,Violation,AltNameMustBeString,Validates that an alt_name is a string data type.
+Fixture,Violation,DisplayPointMustBePointGeometry,Validates that a display_point is a point geometry type.
+Fixture,Violation,FixtureCategoryMustBeValid,Validates the category assigned to a Fixture.
+Fixture,Violation,FixtureMustBeCoveredByReferencedLevel,Validates that a Fixture is covered by the referenced Level.
+Fixture,Violation,FixtureMustHaveCategory,Validates that a Fixture has a category value.
+Fixture,Violation,FixtureMustHavePolygonalGeometry,Validates that a Fixture feature has Polygon or MultiPolygon geometry.
+Fixture,Violation,FixtureMustNotEqualFixture,Validates that Fixtures are not equal on the same Level.
+Fixture,Violation,FixtureMustNotEqualUnit,Validates that a Fixture is not equal to a Unit on the same Level.
+Fixture,Violation,FixtureMustReferenceLevel,Validates that a Fixture references a Level.
+Fixture,Violation,FixturesMustNotOverlap,Validates that Fixture interiors do not intersect.
+Fixture,Violation,InvalidFeatureID,Validates that a feature ID is a valid v4 UUID value.
+Fixture,Violation,InvalidLanguageTag,Validates that a language tag is a valid value.
+Fixture,Violation,LabelMustNotBeBlank,Validates that a Label (prefLabel and altLabel) is not blank.
+Fixture,Violation,NameMustBeString,Validates that a name is a string data type.
+Fixture,Warning,AltNameLangTagHasNoCorrespondingNameLangTag,Validates that a language tag associated with an alt_name has a corresponding presence and association with a name value.
+Fixture,Warning,BaggageCarouselFixtureShouldHaveDisplayPointAndName,Validates that a 'baggagecarousel' Fixture has both a display_point and name when the Fixture does not contain a 'baggagecarousel' Amenity.
+Fixture,Warning,BaggageCarouselFixtureShouldHaveName,"Validates that a 'baggagecarousel' Fixture has a name value when it has a display_point, and the Fixture does not contain a 'baggagecarousel' Amenity."
+Fixture,Warning,FixtureGeometryMustContainDisplayPoint,Validates that the display_point is contained by the Fixture.
+Fixture,Warning,FixtureHasInteriorRing,Validates that a Fixture does not possess an interior ring.
+Fixture,Warning,FixtureMustBeCoveredByUnit,Validates that a Fixture is covered by a Unit.
+Fixture,Warning,FixtureMustContainReferencedAnchor,Validates that a Fixture contains the referenced Anchor.
+Fixture,Warning,FixtureMustNotOverlapKiosk,Validates that Fixture and Kiosk interiors do not intersect.
+Fixture,Warning,HasOnlyAltName,"Validates that an alt_name value is not exclusive, that it is accompanied by a name value."
+Fixture,Warning,OpenToBelowUnitMustNotContainFixture,Validates that a Fixture is not contained by an 'opentobelow' Unit.
+Fixture,Warning,StructuralUnitMustNotContainFixture,"Validates that a Fixture is not contained (or overlapped) by a Unit that models physical/structural elements, such as 'brick', 'column', 'concrete', 'drywall', 'glass', 'structure', and 'wood'."
+Footprint,Violation,AerialFootprintMustNotContainOrEqualAerialFootprint,Validates that an 'aerial' Footprint does not equal or contain another 'aerial' Footprint.
+Footprint,Violation,FootprintCategoryMustBeValid,Validates the category assigned to a Footprint.
+Footprint,Violation,FootprintMustHavePolygonalGeometry,Validates that a Footprint has a Polygon or MultiPolygon geometry.
+Footprint,Violation,FootprintMustReferenceBuilding,Validates that a Footprint references a Building.
+Footprint,Violation,GroundFootprintMustNotContainOrEqualGroundFootprint,Validates that a 'ground' Footprint does not equal or contain another 'ground' Footprint.
+Footprint,Violation,InvalidFeatureID,Validates that a feature ID is a valid v4 UUID value.
+Footprint,Violation,LabelMustNotBeBlank,Validates that a Label (prefLabel and altLabel) is not blank.
+Footprint,Violation,NameMustBeString,Validates that a name is a string data type.
+Footprint,Warning,AerialFootprintShouldCoverGroundFootprint,Validates that an 'aerial' Footprint contains a 'ground' Footprint.
+Footprint,Warning,AerialFootprintsShouldNotOverlap,Validates that 'aerial' Footprints do not overlap.
+Footprint,Warning,FootprintHasInteriorRing,Validates that a Footprint does not possess an interior ring.
+Footprint,Warning,GroundFootprintShouldIntersectSubterraneanFootprint,"Validates that a 'subterranean' Footprint intersects a 'ground' Footprint. Intersection may either be features that touch, or the interior geometry of one feature intersecting the interior geometry of another."
+Footprint,Warning,GroundFootprintsShouldNotOverlap,Validates that 'ground' Footprints do not overlap.
+Footprint,Warning,IndoorLevelNotEqualToAerialFootprint,"Validates that the union of all Indoor Levels whose ordinal is '0' and greater, is equal to the 'aerial' Footprint referencing the same Building."
+Footprint,Warning,IndoorLevelNotEqualToGroundFootprint,Validates that the union of all Indoor Levels whose ordinal is '0' is equal to the 'ground' Footprint referencing the same Building.
+Footprint,Warning,IndoorLevelNotEqualToSubterraneanFootprint,"Validates that the union of all Indoor Levels, ordinal '-1' and less, is equal to the 'subterranean' Footprint referencing the same Building."
+Footprint,Warning,SubterraneanFootprintsOverlap,Validates that 'subterranean' Footprints do not overlap.
+Geofence,Info,GeofenceHasInteriorRing,Validates that a Geofence does not possess an interior ring.
+Geofence,Info,GeofenceHasNoBuildingReference,Validates that a Geofence references a Building.
+Geofence,Info,GeofenceHasNoLevelReference,Validates that a Geofence references a Level.
+Geofence,Info,GeofenceHasParentReference,Validates that a Geofence has a parent reference.
+Geofence,Info,GeofenceNotWithinReferencedBuildingFootprint,Validates that a Geofence is within the referenced Building's union of Footprints.
+Geofence,Info,GeofencesOverlap,Validates that the interior geometry of a Geofence does not intersect the interior geometry of another on the same Level.
+Geofence,Violation,AltNameMustBeString,Validates that an alt_name is a string data type.
+Geofence,Violation,CorrelationIdMustBeMatched,Validates that a correlation_id is matched by at least one other feature's correlation_id in the same feature-type.
+Geofence,Violation,DisplayPointMustBePointGeometry,Validates that a display_point is a point geometry type.
+Geofence,Violation,GeofenceCategoryMustBeValid,Validates the category assigned to a Geofence.
+Geofence,Violation,GeofenceMustHaveCategory,Validates that a Geofence has a category value.
+Geofence,Violation,GeofenceMustHaveLevelOrBuildingReference,Validates that a Geofence references at least one Level or Building.
+Geofence,Violation,GeofenceMustHavePolygonalGeometry,Validates that a Geofence has Polygon or MultiPolygon geometry.
+Geofence,Violation,InvalidCorrelationID,Validates that a 'correlation_id' is a valid v4 UUID value.
+Geofence,Violation,InvalidFeatureID,Validates that a feature ID is a valid v4 UUID value.
+Geofence,Violation,InvalidLanguageTag,Validates that a language tag is a valid value.
+Geofence,Violation,LabelMustNotBeBlank,Validates that a Label (prefLabel and altLabel) is not blank.
+Geofence,Violation,LevelIDsMustBeDissimilarForCorrelationID,"Validates that features from the same feature-type, whose correlation_id match, possess dissimilar Level id values."
+Geofence,Violation,NameMustBeString,Validates that a name is a string data type.
+Geofence,Violation,RestrictionCategoryMustBeValid,Validates the category assigned to a Restriction.
+Geofence,Warning,AltNameLangTagHasNoCorrespondingNameLangTag,Validates that a language tag associated with an alt_name has a corresponding presence and association with a name value.
+Geofence,Warning,CategoryShouldBeSameForCorrelationID,Validates that features with matching correlation_id possess the same category.
+Geofence,Warning,GeofenceGeometryMustContainDisplayPoint,Validates that the display_point is within the Geofence.
+Geofence,Warning,GeofenceNotCoveredByReferencedLevel,Validates that a Geofence is covered by the referenced Level.
+Geofence,Warning,HasOnlyAltName,"Validates that an alt_name value is not exclusive, that it is accompanied by a name value."
+Kiosk,Violation,AltNameMustBeString,Validates that an alt_name is a string data type.
+Kiosk,Violation,DisplayPointMustBePointGeometry,Validates that a display_point is a point geometry type.
+Kiosk,Violation,InvalidFeatureID,Validates that a feature ID is a valid v4 UUID value.
+Kiosk,Violation,InvalidLanguageTag,Validates that a language tag is a valid value.
+Kiosk,Violation,KioskMustBeCoveredByReferencedLevel,Validates that a Kiosk is covered by the referenced Level.
+Kiosk,Violation,KioskMustHavePolygonalGeometry,Validates that a Kiosk has a Polygon or MultiPolygon geometry.
+Kiosk,Violation,KioskMustNotEqualUnit,Validates that a Kiosk does not equal a Unit.
+Kiosk,Violation,KioskMustReferenceLevel,Validates that a Kiosk feature references a Level.
+Kiosk,Violation,KiosksMustNotOverlap,Validates that Kiosk interiors do not intersect.
+Kiosk,Violation,LabelMustNotBeBlank,Validates that a Label (prefLabel and altLabel) is not blank.
+Kiosk,Violation,NameMustBeString,Validates that a name is a string data type.
+Kiosk,Warning,AltNameLangTagHasNoCorrespondingNameLangTag,Validates that a language tag associated with an alt_name has a corresponding presence and association with a name value.
+Kiosk,Warning,HasOnlyAltName,"Validates that an alt_name value is not exclusive, that it is accompanied by a name value."
+Kiosk,Warning,KioskGeometryMustContainDisplayPoint,Validates that the display_point is within the Kiosk.
+Kiosk,Warning,KioskHasInteriorRing,Validates that a Kiosk does not possess an interior ring.
+Kiosk,Warning,KioskMustBeCoveredByUnit,Validates that a Kiosk is covered by a Unit.
+Kiosk,Warning,KioskMustContainReferencedAnchor,Validates that a Kiosk contains the referenced Anchor.
+Kiosk,Warning,KioskShouldHaveAnchorOrContainAmenity,Validates that a Kiosk references an Anchor or contains Amenity.
+Kiosk,Warning,OpenToBelowUnitMustNotContainKiosk,Validates that a Kiosk is not contained by an 'opentobelow' Unit.
+Kiosk,Warning,StructuralUnitMustNotContainKiosk,"Validates that a Kiosk is not contained (or overlapped) by a Unit that models physical/structural elements, such as 'brick', 'column', 'concrete', 'drywall', 'glass', 'structure', and 'wood'."
+Level,Info,LevelHasSuspiciousOrdinal,Validates that a Level ordinal value is within the typical range. (>=-12 =<163)
+Level,Info,OutdoorLevelHasBuildingReference,Validates that an outdoor Level on ordinal 0 does not reference a Building.
+Level,Info,ParkingUnitIsNotContainedByParkingLevel,Validates that a 'parking' Unit is contained by a 'parking' Level when the Level contains any other Unit category except: `office` `platform` `room` `unenclosedarea`.
+Level,Violation,DisplayPointMustBePointGeometry,Validates that a display_point is a point geometry type.
+Level,Violation,InvalidFeatureID,Validates that a feature ID is a valid v4 UUID value.
+Level,Violation,InvalidLanguageTag,Validates that a language tag is a valid value.
+Level,Violation,LabelMustNotBeBlank,Validates that a Label (prefLabel and altLabel) is not blank.
+Level,Violation,LevelCategoryMustBeValid,Validates the category assigned to a Level.
+Level,Violation,LevelMustBeReferencedByUnit,Validates that a Level is referenced by at least one Unit.
+Level,Violation,LevelMustHaveCategory,Validates that a Level has a category value.
+Level,Violation,LevelMustHaveName,Validates that a Level has a name.
+Level,Violation,LevelMustHaveOrdinal,Validates that a Level has an ordinal.
+Level,Violation,LevelMustHavePolygonalGeometry,Validates that a Level has a Polygon or MultiPolygon geometry.
+Level,Violation,LevelMustHaveShortName,Validates that a Level has a short_name.
+Level,Violation,LevelOrdinalMustBeInteger,Validates that a Level ordinal is an integer value.
+Level,Violation,NameMustBeString,Validates that a name is a string data type.
+Level,Violation,RestrictionCategoryMustBeValid,Validates the category assigned to a Restriction.
+Level,Warning,IndoorLevelMustHaveBuildingReference,Validates that an indoor Level references a Building.
+Level,Warning,LevelAndAerialFootprintShouldReferenceSameBuilding,Validates that a Level whose interior geometry intersects the interior geometry of an 'aerial' Footprint both reference the same Building.
+Level,Warning,LevelAndGroundFootprintShouldReferenceSameBuilding,Validates that a Level whose interior geometry intersects the interior geometry of a 'ground' Footprint both reference the same Building.
+Level,Warning,LevelAndSubterraneanFootprintShouldReferenceSameBuilding,Validates that a Level whose interior geometry intersects the interior geometry of a 'subterranean' Footprint both reference the same Building.
+Level,Warning,LevelGeometryMustContainDisplayPoint,Validates that the display_point is within the Level.
+Level,Warning,LevelHasInteriorRing,Validates that a Level does not possess an interior ring.
+Level,Warning,LevelMustBeFullyCoveredByUnits,Validates that the union of all Units is equal to the Level they reference.
+Level,Warning,LevelShouldBeReferencedByOpening,Validates that a Level is referenced by at least one Opening.
+Level,Warning,LevelsShouldNotOverlap,Validates that Level interiors do not intersect.
+Level,Warning,OutdoorLevelHasNegativeOrdinal,Validates that an outdoor Level does not have a negative ordinal.
+Level,Warning,OutdoorLevelShouldNotOverlapGroundFootprint,Validates that an outdoor Level whose ordinal is '0' does not overlap any Building's 'ground' Footprint.
+Level,Warning,OutdoorLevelShouldReferenceBuilding,"Validates that an outdoor Level, on an ordinal other than 0, references a Building."
+Level,Warning,ParkingLevelShouldContainParkingUnit,Validates that a 'parking' Level contains a 'parking' Unit.
+Level,Warning,ParkingLevelShouldHaveAutomobileOpening,Validates that a 'parking' Level is referenced by an expected Opening category on the expected ordinal.
+Level,Warning,ParkingUnitShouldBeContainedByParkingLevel,"Validates that a Level containing a 'parking' Unit, and no other Unit, is categorized as a 'parking' Level."
+Manifest,Violation,ManifestVersionMustBeValid,Validates the IMDF version declared in the Manifest geoJSON.
+Occupant,Info,OccupantShouldHaveModifiedTime,Validates that an Occupant has a modified time.
+Occupant,Violation,CorrelationIdMustBeMatched,Validates that a correlation_id is matched by at least one other feature's correlation_id in the same feature-type.
+Occupant,Violation,EndDateTimeIsBeforeCurrentDateTime,Validates that an end DATE-TIME is after the current (system) date-time.
+Occupant,Violation,HoursMustNotBeBlank,Validates that hours are not blank. (Not empty string or whitespace.)
+Occupant,Violation,InvalidCorrelationID,Validates that a 'correlation_id' is a valid v4 UUID value.
+Occupant,Violation,InvalidFeatureID,Validates that a feature ID is a valid v4 UUID value.
+Occupant,Violation,InvalidLanguageTag,Validates that a language tag is a valid value.
+Occupant,Violation,LabelMustNotBeBlank,Validates that a Label (prefLabel and altLabel) is not blank.
+Occupant,Violation,LevelIDsMustBeDissimilarForCorrelationID,"Validates that features from the same feature-type, whose correlation_id match, possess dissimilar Level id values."
+Occupant,Violation,ModifiedDateTimeIsAfterCurrentDateTime,Validates that a modified DATE-TIME is before the current (system) date-time.
+Occupant,Violation,NameMustBeString,Validates that a name is a string data type.
+Occupant,Violation,OccupantCategoryMustBeValid,Validates the category assigned to an Occupant.
+Occupant,Violation,OccupantMustHaveCategory,Validates that an Occupant has a category value.
+Occupant,Violation,OccupantMustHaveName,Validates that an Occupant has a Name.
+Occupant,Violation,OccupantMustReferenceAnchor,Validates that an Occupant references an Anchor.
+Occupant,Violation,PhoneMustBeValid,Validates that the phone is correctly formatted.
+Occupant,Violation,StartDateTimeIsAfterEndDateTime,Validates that a start DATE-TIME` is before the end DATE-TIME.
+Occupant,Violation,WebsiteMustBeValid,Validates that a website URL is correctly formatted.
+Occupant,Warning,CategoryShouldBeSameForCorrelationID,Validates that features with matching correlation_id possess the same category.
+Occupant,Warning,OccupantShouldHaveHours,Validates that an Occupant has hours.
+Occupant,Warning,OccupantShouldHavePhone,Validates that an Occupant has a phone.
+Occupant,Warning,OccupantShouldHaveWebsite,Validates that an Occupant has a website.
+Occupant,Warning,SimilarOccupantsShouldNotRefSameAnchor,Validates that an Anchor reference is not matched among similarly named Occupants.
+Opening,Violation,AccessControlMustBeValid,Validates that the access_control category assigned to the Opening.
+Opening,Violation,AccessibilityMustBeValid,Validates the accessibility category assigned to the feature.
+Opening,Violation,AltNameMustBeString,Validates that an alt_name is a string data type.
+Opening,Violation,DisplayPointMustBePointGeometry,Validates that a display_point is a point geometry type.
+Opening,Violation,InvalidFeatureID,Validates that a feature ID is a valid v4 UUID value.
+Opening,Violation,InvalidLanguageTag,Validates that a language tag is a valid value.
+Opening,Violation,LabelMustNotBeBlank,Validates that a Label (prefLabel and altLabel) is not blank.
+Opening,Violation,NameMustBeString,Validates that a name is a string data type.
+Opening,Violation,OpeningCategoryMustBeValid,Validates the category assigned to an Opening.
+Opening,Violation,OpeningDoorMaterialMustBeValid,Validates that the Opening's door material is valid.
+Opening,Violation,OpeningDoorTypeMustBeValid,Validates that the Opening door type is valid.
+Opening,Violation,OpeningMustBeCoveredByReferencedLevel,Validates that an Opening is within the referenced Level.
+Opening,Violation,OpeningMustHaveCategory,Validates that an Opening has a category.
+Opening,Violation,OpeningMustHaveLineStringGeometry,Validates that an Opening has a LineString geometry.
+Opening,Violation,OpeningMustReferenceLevel,Validates that an Opening references a Level.
+Opening,Warning,AltNameLangTagHasNoCorrespondingNameLangTag,Validates that a language tag associated with an alt_name has a corresponding presence and association with a name value.
+Opening,Warning,HasOnlyAltName,"Validates that an alt_name value is not exclusive, that it is accompanied by a name value."
+Opening,Warning,OpeningDisplayPointShouldBeWithinBufferedDistanceOfOpening,Validates that an Opening display_point is within a buffered distance of the line-string.
+Opening,Warning,OpeningIsSuspiciouslyLarge,Validates that the Opening length does not exceed 45 meters.
+Opening,Warning,OpeningIsSuspiciouslySmall,Validates that the Opening length exceeds 0.8382 meters.
+Opening,Warning,OpeningMustBeCoveredByUnitBoundary,Validates that an Opening is covered by a Unit's boundary.
+Opening,Warning,OpeningsMustNotCrossOrOverlap,Validates that an Opening does not cross or overlap another Opening referencing the same Level.
+Relationship,Info,RelationshipHasGeometry,Validates that a Relationship has geometry.
+Relationship,Violation,InvalidFeatureID,Validates that a feature ID is a valid v4 UUID value.
+Relationship,Violation,InvalidRelationshipDestinationReference,Validates the integrity of a feature reference.
+Relationship,Violation,InvalidRelationshipIntermediaryReference,Validates the integrity of a feature reference.
+Relationship,Violation,InvalidRelationshipOriginReference,Validates the integrity of a feature reference.
+Relationship,Violation,RelationshipCategoryMustBeValid,Validates the category assigned to a Relationship.
+Relationship,Violation,RelationshipDirectionMustBeValid,Validates the direction assigned to a Relationship.
+Relationship,Violation,RelationshipMustHaveCategory,Validates that a Relationship has a category.
+Section,Info,SectionHasInteriorRing,Validates that a Section does not possess an interior ring.
+Section,Info,SectionHasParentReference,Validates that a Section has a parent reference.
+Section,Info,SectionsOverlap,Validates that Section interiors do not intersect on the same Level.
+Section,Violation,AccessibilityMustBeValid,Validates the accessibility category assigned to the feature.
+Section,Violation,AltNameMustBeString,Validates that an alt_name is a string data type.
+Section,Violation,CorrelationIdMustBeMatched,Validates that a correlation_id is matched by at least one other feature's correlation_id in the same feature-type.
+Section,Violation,DisplayPointMustBePointGeometry,Validates that a display_point is a point geometry type.
+Section,Violation,InvalidCorrelationID,Validates that a 'correlation_id' is a valid v4 UUID value.
+Section,Violation,InvalidFeatureID,Validates that a feature ID is a valid v4 UUID value.
+Section,Violation,InvalidLanguageTag,Validates that a language tag is a valid value.
+Section,Violation,LabelMustNotBeBlank,Validates that a Label (prefLabel and altLabel) is not blank.
+Section,Violation,LevelIDsMustBeDissimilarForCorrelationID,"Validates that features from the same feature-type, whose correlation_id match, possess dissimilar Level id values."
+Section,Violation,NameMustBeString,Validates that a name is a string data type.
+Section,Violation,RestrictionCategoryMustBeValid,Validates the category assigned to a Restriction.
+Section,Violation,SectionCategoryMustBeValid,Validates the category assigned to a Section.
+Section,Violation,SectionMustBeCoveredByReferencedLevel,Validates that a Section is covered by the referenced Level.
+Section,Violation,SectionMustHaveCategory,Validates that a Section has a category.
+Section,Violation,SectionMustHavePolygonalGeometry,Validates that a Section has a Polygon or MultiPolygon geometry.
+Section,Violation,SectionMustReferenceLevel,Validates that a Section references a Level.
+Section,Warning,AltNameLangTagHasNoCorrespondingNameLangTag,Validates that a language tag associated with an alt_name has a corresponding presence and association with a name value.
+Section,Warning,CategoryShouldBeSameForCorrelationID,Validates that features with matching correlation_id possess the same category.
+Section,Warning,HasOnlyAltName,"Validates that an alt_name value is not exclusive, that it is accompanied by a name value."
+Section,Warning,SectionGeometryMustContainDisplayPoint,Validates that the display_point is within its Section.
+Unit,Violation,AccessibilityMustBeValid,Validates the accessibility category assigned to the feature.
+Unit,Violation,AltNameMustBeString,Validates that an alt_name is a string data type.
+Unit,Violation,DisplayPointMustBePointGeometry,Validates that a display_point is a point geometry type.
+Unit,Violation,InvalidFeatureID,Validates that a feature ID is a valid v4 UUID value.
+Unit,Violation,InvalidLanguageTag,Validates that a language tag is a valid value.
+Unit,Violation,LabelMustNotBeBlank,Validates that a Label (prefLabel and altLabel) is not blank.
+Unit,Violation,NameMustBeString,Validates that a name is a string data type.
+Unit,Violation,RestrictionCategoryMustBeValid,Validates the category assigned to a Restriction.
+Unit,Violation,UnitCategoryMustBeValid,Validates the category assigned to a Unit.
+Unit,Violation,UnitMustBeCoveredByReferencedLevel,Validates that a Unit is covered by the referenced Level.
+Unit,Violation,UnitMustHaveCategory,Validates that a Unit has a category.
+Unit,Violation,UnitMustHavePolygonalGeometry,Validates that a Unit has Polygon or MultiPolygon geometry.
+Unit,Violation,UnitMustReferenceLevel,Validates that a Unit references a Level.
+Unit,Warning,AltNameLangTagHasNoCorrespondingNameLangTag,Validates that a language tag associated with an alt_name has a corresponding presence and association with a name value.
+Unit,Warning,HasOnlyAltName,"Validates that an alt_name value is not exclusive, that it is accompanied by a name value."
+Unit,Warning,UnitGeometryMustContainDisplayPoint,"Validates that a display_point, if present, is contained by the Unit."
+Unit,Warning,UnitsMustNotOverlap,Validates that Unit interiors do not intersect.
+Venue,Violation,AltNameMustBeString,Validates that an alt_name is a string data type.
+Venue,Violation,DisplayPointMustBePointGeometry,Validates that a display_point is a point geometry type.
+Venue,Violation,HoursMustNotBeBlank,Validates that hours are not blank. (Not empty string or whitespace.)
+Venue,Violation,InvalidFeatureID,Validates that a feature ID is a valid v4 UUID value.
+Venue,Violation,InvalidLanguageTag,Validates that a language tag is a valid value.
+Venue,Violation,LabelMustNotBeBlank,Validates that a Label (prefLabel and altLabel) is not blank.
+Venue,Violation,NameMustBeString,Validates that a name is a string data type.
+Venue,Violation,PhoneMustBeValid,Validates that the phone is correctly formatted.
+Venue,Violation,RestrictionCategoryMustBeValid,Validates the category assigned to a Restriction.
+Venue,Violation,VenueCategoryMustBeValid,Validates the category assigned to a Venue.
+Venue,Violation,VenueGeometryMustContainDisplayPoint,Validates that a display_point assigned to a Venue feature is contained by its polygonal geometry.
+Venue,Violation,VenueMustCoverAllChildFeatures,Validates that all features are contained within the Venue.
+Venue,Violation,VenueMustHaveAddress,Validates that a Venue references an Address.
+Venue,Violation,VenueMustHaveAtLeastOneBuilding,Validates that a delivery contains at least one Building.
+Venue,Violation,VenueMustHaveCategory,Validates that the Venue has a category.
+Venue,Violation,VenueMustHaveName,Validates that a Venue has a Name.
+Venue,Violation,VenueMustHavePolygonalGeometry,Validates that a Venue has Polygon or MultiPolygon geometry.
+Venue,Violation,WebsiteMustBeValid,Validates that a website URL is correctly formatted.
+Venue,Warning,AltNameLangTagHasNoCorrespondingNameLangTag,Validates that a language tag associated with an alt_name has a corresponding presence and association with a name value.
+Venue,Warning,VenueGeometryShouldNotHaveInteriorRing,Validates that a Venue does not possess an interior ring.
+Venue,Warning,VenueHasNoDisplayPoint,Validates that the Venue has a display_point.
+Venue,Warning,VenueShouldHaveHours,Validates that a Venue has hours (of operation).
+Venue,Warning,VenueShouldHavePhone,Validates that a Venue has a phone (telephone number).
+Venue,Warning,VenueShouldHaveWebsite,Validates that a Venue has a website.

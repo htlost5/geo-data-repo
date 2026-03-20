@@ -1,0 +1,2664 @@
+{
+  "type": "FeatureCollection",
+  "name": "units",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9d603756-17de-4af9-a195-6b6e30de4d26",
+        "feature_t": "unit",
+        "category": "conference_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "大会議室",
+        "name_en": "large conferenceroom",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678758705434689, 35.498522301186881],
+              [139.678869156709453, 35.498522300303591],
+              [139.678869155088279, 35.498394070916383],
+              [139.67875870398899, 35.498394071799673],
+              [139.678758704133799, 35.498406915454204],
+              [139.678742998883735, 35.498406915571586],
+              [139.678742999877528, 35.498496613995677],
+              [139.678758705145071, 35.498496613878281],
+              [139.678758705434689, 35.498522301186881]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1135b54d-1360-40d5-9e7a-4a26fb8bdf88",
+        "feature_t": "unit",
+        "category": "conference_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "中会議室",
+        "name_en": "medium conference room",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.67875870398899, 35.498394071799673],
+              [139.678869155088279, 35.498394070916383],
+              [139.678869154352583, 35.498335884093677],
+              [139.678742998096766, 35.498335885094363],
+              [139.678742998599148, 35.49838122826251],
+              [139.678758703844181, 35.498381228145114],
+              [139.67875870398899, 35.498394071799673]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "384da31f-92d9-4fb3-a81d-7dc08ae2df67",
+        "feature_t": "unit",
+        "category": "staff_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "スーパーアドバイザー室",
+        "name_en": "superadvisor room",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678742998096766, 35.498335885094363],
+              [139.678869154352583, 35.498335884093677],
+              [139.678869153616944, 35.498277697272378],
+              [139.678758703162856, 35.498277698155682],
+              [139.67875870319773, 35.498280788624804],
+              [139.678758703307665, 35.498290541810448],
+              [139.678742997594355, 35.498290541927858],
+              [139.678742998096766, 35.498335885094363]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "a06dc2fe-1579-4bdc-9879-9ba657562c0f",
+        "feature_t": "unit",
+        "category": "conferenceconference_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "特別会議室",
+        "name_en": "special conferenceroom",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678758703162856, 35.498277698155682],
+              [139.678869153616944, 35.498277697272378],
+              [139.678869152881305, 35.498219510450525],
+              [139.678758702506883, 35.498219511333815],
+              [139.678758702651663, 35.498232354988723],
+              [139.678758703162856, 35.498277698155682]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "138db724-ac3e-4f43-9287-9fe48526ad06",
+        "feature_t": "unit",
+        "category": "conferenceroom",
+        "restricte": null,
+        "access": null,
+        "name_ja": "小会議室",
+        "name_en": "small conferenceroom",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678758702506883, 35.498219511333815],
+              [139.678869152881305, 35.498219510450525],
+              [139.678869152365309, 35.498178697690449],
+              [139.678807812598478, 35.49817869819347],
+              [139.678774407738274, 35.498178698454304],
+              [139.678758702046736, 35.498178698573739],
+              [139.678758702506883, 35.498219511333815]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1a689dc8-929a-439d-b004-fd8375200267",
+        "feature_t": "unit",
+        "category": "conference_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "教務倉庫",
+        "name_en": "staff's storage",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678869152365309, 35.498178697690449],
+              [139.678869151532297, 35.498112810314396],
+              [139.678795102145045, 35.498112810917746],
+              [139.678795102564663, 35.498148597333333],
+              [139.678742996021725, 35.498148597730669],
+              [139.678742996217636, 35.498166280357673],
+              [139.678774407595881, 35.498166280120849],
+              [139.678774407738274, 35.498178698454304],
+              [139.678869152365309, 35.498178697690449]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9f8696a7-e33a-4837-8651-542b3b81fe9e",
+        "feature_t": "unit",
+        "category": "concrete",
+        "restricte": null,
+        "access": null,
+        "name_ja": "防火扉",
+        "name_en": "fire door",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678742996021725, 35.498148597730669],
+              [139.678795102564663, 35.498148597333333],
+              [139.678795102145045, 35.498112811799281],
+              [139.678754611483697, 35.49811281123565],
+              [139.678748803556772, 35.498112811278013],
+              [139.678742995625186, 35.498112811315075],
+              [139.678742996021725, 35.498148597730669]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7684eeae-9c1f-4506-b67c-9ac667d961c3",
+        "feature_t": "unit",
+        "category": "office",
+        "restricte": null,
+        "access": null,
+        "name_ja": "講師職員室",
+        "name_en": "lecturer staffroom",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678518064993, 35.498112812772],
+              [139.678518066019308, 35.498160513926862],
+              [139.678518065582779, 35.498183943448424],
+              [139.678718263247589, 35.498183942172226],
+              [139.678718262481311, 35.498112811495787],
+              [139.678712454554386, 35.498112811536366],
+              [139.678518064993, 35.498112812772]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "82e74c36-5d83-4e3e-bfb9-a2590d99dfd7",
+        "feature_t": "unit",
+        "category": "elevator",
+        "restricte": null,
+        "access": null,
+        "name_ja": "エレベータ",
+        "name_en": "elevator",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678613278200459, 35.498218175533552],
+              [139.67861327844264, 35.498243742776204],
+              [139.678648117711987, 35.4982437425505],
+              [139.67864811761919, 35.498234373183486],
+              [139.678648117458749, 35.498218175307848],
+              [139.678621711416838, 35.498218175479842],
+              [139.678613278200459, 35.498218175533552]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "a988f466-36ec-4d7e-b88a-5f6c00ea7be1",
+        "feature_t": "unit",
+        "category": "restroom.female",
+        "restricte": null,
+        "access": null,
+        "name_ja": "女子トイレ",
+        "name_en": "female's restroom",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678692217856735, 35.498234372883353],
+              [139.678677345190721, 35.498234372986374],
+              [139.67864811761919, 35.498234373183486],
+              [139.678648117711987, 35.4982437425505],
+              [139.678648117789606, 35.498251582221528],
+              [139.678628944498598, 35.498251582346981],
+              [139.678628944740467, 35.498276606138752],
+              [139.678677345624294, 35.49827660581618],
+              [139.678677345367362, 35.498251582024416],
+              [139.678692218036559, 35.498251581921394],
+              [139.678692217856735, 35.498234372883353]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "c50d3d01-7d6d-4bf2-89ce-17a5521ac58b",
+        "feature_t": "unit",
+        "category": "restroom_male",
+        "restricte": null,
+        "access": null,
+        "name_ja": "男子トイレ",
+        "name_en": "male's restroom",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678718264245873, 35.498276605528332],
+              [139.678718263479567, 35.498205474852988],
+              [139.678692309405335, 35.498205475037182],
+              [139.678692218036559, 35.498251581921394],
+              [139.678677345367362, 35.498251582024416],
+              [139.678677345624294, 35.49827660581618],
+              [139.678718264245873, 35.498276605528332]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "99727f8e-a214-418a-b901-4a008e94ed9c",
+        "feature_t": "unit",
+        "category": "restroom_accessible",
+        "restricte": null,
+        "access": null,
+        "name_ja": "多目的トイレ",
+        "name_en": "accessible restroom",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.67864811761919, 35.498234373183486],
+              [139.678677345190721, 35.498234372986374],
+              [139.678677345190721, 35.498234372986374],
+              [139.678677344990092, 35.498214828053698],
+              [139.67864811742561, 35.498214828250809],
+              [139.678648117458749, 35.498218175307855],
+              [139.67864811761919, 35.498234373183486]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4d2a2840-1525-4881-a3ae-767d2d5d9419",
+        "feature_t": "unit",
+        "category": "room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "自習室1",
+        "name_en": "studyroom 1",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678213572694716, 35.498183941084399],
+              [139.678317962677255, 35.49818394072382],
+              [139.678317962263861, 35.498112811212124],
+              [139.678213572373323, 35.498112810238304],
+              [139.678213572694716, 35.498183941084399]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "97daa229-c83a-44cd-bf24-21c898f22240",
+        "feature_t": "unit",
+        "category": "library",
+        "restricte": null,
+        "access": null,
+        "name_ja": "図書室",
+        "name_en": "library",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.677913920981439, 35.498183941617718],
+              [139.678213572694716, 35.498183941084399],
+              [139.678213572373323, 35.498112811572689],
+              [139.677913920924226, 35.498112810944029],
+              [139.677913920981439, 35.498183941617718]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "b24ac5f9-4555-445d-8272-1f681cd48aeb",
+        "feature_t": "unit",
+        "category": "restroom_male",
+        "restricte": null,
+        "access": null,
+        "name_ja": "男子トイレ",
+        "name_en": "male's restroom",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.677938939791062, 35.498205477950712],
+              [139.677913920998776, 35.498205477966764],
+              [139.677913921055989, 35.498276608642108],
+              [139.677953436753427, 35.498276608614376],
+              [139.677953436720998, 35.498251584822604],
+              [139.677938939842448, 35.498251584834271],
+              [139.677938939823264, 35.498234375800287],
+              [139.677938939791062, 35.498205477950712]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "0a6467e1-f197-432e-946c-ba5f0b7402ad",
+        "feature_t": "unit",
+        "category": "restroom.female",
+        "restricte": null,
+        "access": null,
+        "name_ja": "女子トイレ",
+        "name_en": "female's restroom",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.677938939823264, 35.498234375800287],
+              [139.677938939842448, 35.498251584834271],
+              [139.677953436720998, 35.498251584822604],
+              [139.677953436753427, 35.498276608614376],
+              [139.678000907655274, 35.498276608563948],
+              [139.678000907608151, 35.49825158477217],
+              [139.677981495195695, 35.498251584795049],
+              [139.67798149518282, 35.498243745124029],
+              [139.677981495167415, 35.498234375761058],
+              [139.677953436698743, 35.498234375788613],
+              [139.677938939823264, 35.498234375800287]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "be541e87-ae86-46b9-9644-9196a0de6288",
+        "feature_t": "unit",
+        "category": "restroom_accessible",
+        "restricte": null,
+        "access": null,
+        "name_ja": "多目的トイレ",
+        "name_en": "accessible restroom",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.677953436698743, 35.498234375788613],
+              [139.677981495167415, 35.498234375761058],
+              [139.677981495133537, 35.498213724920213],
+              [139.677953436672027, 35.49821372494776],
+              [139.677953436698743, 35.498234375788613]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "06975c1f-3055-4611-b0b6-ecf92720911f",
+        "feature_t": "unit",
+        "category": "classroom",
+        "restricte": null,
+        "access": null,
+        "name_ja": "教室S21",
+        "name_en": "classroom S21",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.67821344534488, 35.49827660810918],
+              [139.678317963216472, 35.49827660774821],
+              [139.678317962803078, 35.498205477072872],
+              [139.67821344504469, 35.498205477433842],
+              [139.67821344534488, 35.49827660810918]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "19319ba7-f79f-465b-abfe-7303e810b4b5",
+        "feature_t": "unit",
+        "category": "room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "自習室2",
+        "name_en": "studyroom 2",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678317963216472, 35.49827660774821],
+              [139.678419909063649, 35.498276607308398],
+              [139.678419908581446, 35.498205476633068],
+              [139.678317962803078, 35.498205477072872],
+              [139.678317963216472, 35.49827660774821]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ca915850-daff-4fcc-b9a4-ca28df7c3572",
+        "feature_t": "unit",
+        "category": "storage",
+        "restricte": null,
+        "access": null,
+        "name_ja": "書庫",
+        "name_en": "archive",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678056943042407, 35.498276608480388],
+              [139.678115860590339, 35.498276608364463],
+              [139.678115860376153, 35.498205477669813],
+              [139.678056942859087, 35.498205477805044],
+              [139.678056943042407, 35.498276608480388]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9cd0f2c9-5c51-4b8e-8563-5e1074d21fbb",
+        "feature_t": "unit",
+        "category": "classroom",
+        "restricte": null,
+        "access": null,
+        "name_ja": "Talk Room 1",
+        "name_en": "Talk Room 1",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678718265103868, 35.498358503881676],
+              [139.678668227448668, 35.498358504231341],
+              [139.678668228170835, 35.498429634904873],
+              [139.678718265894418, 35.498429634554761],
+              [139.678718265103868, 35.498358503881676]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "72e9a1db-fb22-4d6e-9952-eadc511d642e",
+        "feature_t": "unit",
+        "category": "classroom",
+        "restricte": null,
+        "access": null,
+        "name_ja": "Talk Room 2",
+        "name_en": "Talk Room 2",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678668227452732, 35.498358504231348],
+              [139.678616085384874, 35.498358504574107],
+              [139.678616086061083, 35.498429635247632],
+              [139.678668228170835, 35.498429634904873],
+              [139.678668227452732, 35.498358504231348]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "a8efadc4-16c9-4a09-bf88-42dc52cddb11",
+        "feature_t": "unit",
+        "category": "concrete",
+        "restricte": null,
+        "access": null,
+        "name_ja": "壁",
+        "name_en": "wall",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678461997927002, 35.498429636128861],
+              [139.678616086061083, 35.498429635247632],
+              [139.678616085384874, 35.498358504574107],
+              [139.678565463149056, 35.498358504885324],
+              [139.67846199738662, 35.498358505455336],
+              [139.678461997927002, 35.498429636128861]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "d3b06ac6-9598-4760-9d7d-6be466a53794",
+        "feature_t": "unit",
+        "category": "it_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "情報教室2",
+        "name_en": "computer room 2",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678317733138329, 35.498451173033345],
+              [139.678317733551523, 35.498522303705776],
+              [139.678419910777791, 35.498522303265581],
+              [139.678419910274528, 35.498451172593157],
+              [139.678317733138329, 35.498451173033345]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4656966d-adbc-4631-bf87-84647062d4c6",
+        "feature_t": "unit",
+        "category": "it_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "情報教室3",
+        "name_en": "computer room 3",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678317733138329, 35.498451173033345],
+              [139.678213446154388, 35.498451173393413],
+              [139.678213446475667, 35.498522304065851],
+              [139.678266312980384, 35.498522303894582],
+              [139.678317733551523, 35.498522303705776],
+              [139.678317733138329, 35.498451173033345]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "685e2ee1-d588-4631-88cb-bb97e4b3714c",
+        "feature_t": "unit",
+        "category": "it_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "プログラミング実習室1",
+        "name_en": "programming training room 1",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678113423489037, 35.498522304326507],
+              [139.678113423255922, 35.498451173654061],
+              [139.678013762849105, 35.49845117383132],
+              [139.67801376299434, 35.498522304503751],
+              [139.67806362481835, 35.498522304425364],
+              [139.678113423489037, 35.498522304326507]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "5ed4ebf0-c0fe-4762-97ba-41dba9f3834c",
+        "feature_t": "unit",
+        "category": "it_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "プログラミング実習室2",
+        "name_en": "programming training room 2",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.677913921253662, 35.498522304598794],
+              [139.67801376299434, 35.498522304503751],
+              [139.678013762849105, 35.49845117383132],
+              [139.677913921196449, 35.498451173926341],
+              [139.677913921253662, 35.498522304598794]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "24799d25-e370-466d-866a-8e13d7140add",
+        "feature_t": "unit",
+        "category": "it_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "情報教室1",
+        "name_en": "computer room 1",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.67841991012213, 35.498429636335345],
+              [139.678419909618839, 35.498358505661827],
+              [139.67821344573585, 35.498358506462083],
+              [139.678213446057129, 35.498429637135615],
+              [139.67841991012213, 35.498429636335345]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "84964bfe-639d-4b2e-b9f0-db1e709c16c6",
+        "feature_t": "unit",
+        "category": "classroom",
+        "restricte": null,
+        "access": null,
+        "name_ja": "セミナールームC21",
+        "name_en": "seminar room C21",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678213446057129, 35.498429637135615],
+              [139.67821344573585, 35.498358506462083],
+              [139.678162955869624, 35.498358506604013],
+              [139.678113422952293, 35.498358506722745],
+              [139.67811342318538, 35.498429637396271],
+              [139.678162956146423, 35.498429637277553],
+              [139.678213446057129, 35.498429637135615]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "5636b7e7-4717-46b1-b864-b0a5cc610ed3",
+        "feature_t": "unit",
+        "category": "classroom",
+        "restricte": null,
+        "access": null,
+        "name_ja": "セミナールームC22",
+        "name_en": "seminar room C22",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.67811342318538, 35.498429637396271],
+              [139.678113422952293, 35.498358506722745],
+              [139.678013762659873, 35.49835850689999],
+              [139.678013762805108, 35.498429637573523],
+              [139.67811342318538, 35.498429637396271]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "e98950be-8b1e-4395-892a-56621ed1b02c",
+        "feature_t": "unit",
+        "category": "classroom",
+        "restricte": null,
+        "access": null,
+        "name_ja": "セミナールームC23",
+        "name_en": "seminar room C23",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.677913921179112, 35.498429637668544],
+              [139.678013762805108, 35.498429637573523],
+              [139.678013762659873, 35.49835850689999],
+              [139.677913921121899, 35.498358506995018],
+              [139.677913921179112, 35.498429637668544]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "404ac5ff-6c7e-447a-aea4-c01f4272c2d1",
+        "feature_t": "unit",
+        "category": "concrete",
+        "restricte": null,
+        "access": null,
+        "name_ja": "壁部屋",
+        "name_en": "壁部屋",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.67798149518282, 35.498243745124029],
+              [139.678015632990366, 35.498243745081716],
+              [139.678015632911325, 35.49820547786917],
+              [139.677981495120008, 35.498205477911483],
+              [139.677981495133537, 35.498213724920205],
+              [139.67798149518282, 35.498243745124029]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "0065788d-b2d4-4960-92fa-10d4c340aefe",
+        "feature_t": "unit",
+        "category": "concrete",
+        "restricte": null,
+        "access": null,
+        "name_ja": "壁",
+        "name_en": "wall",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.67798149518282, 35.498243745124029],
+              [139.677981495195695, 35.498251584795049],
+              [139.678000907608151, 35.49825158477217],
+              [139.678000907655274, 35.498276608563948],
+              [139.678015633058209, 35.498276608544508],
+              [139.678015632990366, 35.498243745081716],
+              [139.67798149518282, 35.498243745124029]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "5947becc-5ea3-444c-b2a8-7fb148798abd",
+        "feature_t": "unit",
+        "category": "concrete",
+        "restricte": null,
+        "access": null,
+        "name_ja": "壁",
+        "name_en": "wall",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678613278200459, 35.498218175533552],
+              [139.678621711416838, 35.498218175479842],
+              [139.678621711295222, 35.498205475509963],
+              [139.678613278080206, 35.498205475563672],
+              [139.678613278200459, 35.498218175533552]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "84e5a79c-7461-43a2-9e95-2425da279444",
+        "feature_t": "unit",
+        "category": "concrete",
+        "restricte": null,
+        "access": null,
+        "name_ja": "壁",
+        "name_en": "wall",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.67864811742561, 35.498214828250809],
+              [139.678677344990092, 35.498214828053698],
+              [139.678677344894055, 35.498205475140843],
+              [139.678648117332983, 35.498205475337961],
+              [139.67864811742561, 35.498214828250809]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1d6ad1f0-0ac6-41b1-9e20-91c28ce45bf7",
+        "feature_t": "unit",
+        "category": "concrete",
+        "restricte": null,
+        "access": null,
+        "name_ja": "壁",
+        "name_en": "wall",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678648117711987, 35.4982437425505],
+              [139.67861327844264, 35.498243742776204],
+              [139.678613278753915, 35.498276606239017],
+              [139.678628944740467, 35.498276606138752],
+              [139.678628944498598, 35.498251582346981],
+              [139.678648117789606, 35.498251582221528],
+              [139.678648117711987, 35.4982437425505]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "73fa78c0-a2cf-48e0-914d-de411558e8c9",
+        "feature_t": "unit",
+        "category": "open_to_below",
+        "restricte": null,
+        "access": null,
+        "name_ja": "吹き抜け",
+        "name_en": "opentobelow",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678565462421858, 35.498276606532421],
+              [139.678565463149056, 35.498358504885324],
+              [139.678718265103868, 35.498358503881676],
+              [139.678718264245873, 35.498276605528332],
+              [139.678613278753915, 35.498276606238989],
+              [139.678565462421858, 35.498276606532421]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "e7592be5-8c82-4f28-bf18-7fd2216d8635",
+        "feature_t": "unit",
+        "category": "concrete",
+        "restricte": null,
+        "access": null,
+        "name_ja": "壁",
+        "name_en": "wall",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678498006555515, 35.498451172198351],
+              [139.678498007127615, 35.498522302870782],
+              [139.67871826689273, 35.498522301484996],
+              [139.678718266126424, 35.498451170812551],
+              [139.678498006555515, 35.498451172198351]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "28e9ea89-4c13-4b98-a9a1-591a7066bd18",
+        "feature_t": "unit",
+        "category": "classroom",
+        "restricte": null,
+        "access": null,
+        "name_ja": "CALL教室2",
+        "name_en": "CALL classroom 2",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678508997985432, 35.498675331831365],
+              [139.678613623603013, 35.49867533121369],
+              [139.678613622928964, 35.498604200543078],
+              [139.678508997403611, 35.498604201160731],
+              [139.678508997985432, 35.498675331831365]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "d5175070-cc02-4dba-8535-dfe834b24839",
+        "feature_t": "unit",
+        "category": "classroom",
+        "restricte": null,
+        "access": null,
+        "name_ja": "CALL教室1",
+        "name_en": "CALL classroom 1",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678613622928964, 35.498604200543078],
+              [139.678613623603013, 35.49867533121369],
+              [139.678718268541303, 35.498675330505179],
+              [139.678718267775025, 35.498604199834553],
+              [139.678613622928964, 35.498604200543078]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "64d1b2dc-7462-44aa-b403-c96c68401bb5",
+        "feature_t": "unit",
+        "category": "restroom_male",
+        "restricte": null,
+        "access": null,
+        "name_ja": "男子トイレ",
+        "name_en": "male's restroom",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678374666869132, 35.49860420176207],
+              [139.678374608050063, 35.498631432349107],
+              [139.678389631636804, 35.498631432282721],
+              [139.678389631749013, 35.49864818039174],
+              [139.678389631930941, 35.498675332425258],
+              [139.678419911815183, 35.49867533228624],
+              [139.678419911332981, 35.498604201565428],
+              [139.678374666869132, 35.49860420176207]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7f6b520a-e0b8-40d6-b2ab-21e94b611345",
+        "feature_t": "unit",
+        "category": "restroom.female",
+        "restricte": null,
+        "access": null,
+        "name_ja": "女子トイレ",
+        "name_en": "female's restroom",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678326574929315, 35.498604202110315],
+              [139.678326575090011, 35.498631354047895],
+              [139.678345439330684, 35.49863135397176],
+              [139.678345439378944, 35.498639193642276],
+              [139.678345439434224, 35.498648180581654],
+              [139.678375134799182, 35.498648180455831],
+              [139.678389631749013, 35.49864818039174],
+              [139.678389631636804, 35.498631432282721],
+              [139.678374667046029, 35.498631353847969],
+              [139.678374666869132, 35.49860420176207],
+              [139.678326574929315, 35.498604202110315]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "d78a5f8f-e927-49c0-880c-88b79c7b14d8",
+        "feature_t": "unit",
+        "category": "restroom_accessible",
+        "restricte": null,
+        "access": null,
+        "name_ja": "多目的トイレ",
+        "name_en": "accessible restroom",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678345439551862, 35.498667301729213],
+              [139.678375134923868, 35.498667301603383],
+              [139.678375134799182, 35.498648180455831],
+              [139.678345439434224, 35.498648180581654],
+              [139.678345439523639, 35.498662715688901],
+              [139.678345439551862, 35.498667301729213]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "489ef614-4bbe-40a6-909f-84b81c6ab969",
+        "feature_t": "unit",
+        "category": "concrete",
+        "restricte": null,
+        "access": null,
+        "name_ja": "壁",
+        "name_en": "wall",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678345439601259, 35.498675332615164],
+              [139.678375134976221, 35.498675332489334],
+              [139.678375134923868, 35.498667301603383],
+              [139.678345439551862, 35.498667301729213],
+              [139.678345439601259, 35.498675332615164]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7a8f797f-875f-4dc6-a2a3-32f193c5617c",
+        "feature_t": "unit",
+        "category": "elevator",
+        "restricte": null,
+        "access": null,
+        "name_ja": "エレベータ",
+        "name_en": "elevator",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678315627242398, 35.498662715807882],
+              [139.678345439523639, 35.498662715688901],
+              [139.678345439378944, 35.498639193642276],
+              [139.678315627106372, 35.498639193761257],
+              [139.678315627242398, 35.498662715807882]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8853c0a5-69b5-4884-8f57-8c1ee10eca3b",
+        "feature_t": "unit",
+        "category": "classroom",
+        "restricte": null,
+        "access": null,
+        "name_ja": "セミナールームN21",
+        "name_en": "seminar room N21",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.677913921319572, 35.498604202798397],
+              [139.677913921376813, 35.498675333618969],
+              [139.678014230950538, 35.498675333523309],
+              [139.678014230804848, 35.498604202722603],
+              [139.677913921319572, 35.498604202798397]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ee1acb93-761e-4ed0-9b0f-f08bab1cfb7e",
+        "feature_t": "unit",
+        "category": "classroom",
+        "restricte": null,
+        "access": null,
+        "name_ja": "セミナールームN22",
+        "name_en": "seminar room N22",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.677913921394122, 35.498696872565965],
+              [139.677913921398982, 35.498702903690187],
+              [139.677913921451363, 35.498768000457822],
+              [139.67801423114031, 35.498768000362141],
+              [139.67801423099462, 35.498696872470305],
+              [139.677913921394122, 35.498696872565965]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "fae251a6-6b4c-40f6-9e2d-247813ad70e4",
+        "feature_t": "unit",
+        "category": "preparation_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "情報実習準備室1",
+        "name_en": "information preparationroom 1",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678113423255922, 35.498451173654061],
+              [139.678113423489037, 35.498522304326507],
+              [139.678162694934201, 35.498522304208478],
+              [139.67816269465763, 35.498451173536026],
+              [139.678113423255922, 35.498451173654061]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "c0c380d9-2746-4551-a7a8-636862ab0d22",
+        "feature_t": "unit",
+        "category": "storage_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "倉庫",
+        "name_en": "storage",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.67816269465763, 35.498451173536026],
+              [139.678162694934201, 35.498522304208478],
+              [139.678213446475667, 35.498522304065851],
+              [139.678213446154388, 35.498451173393413],
+              [139.67816269465763, 35.498451173536026]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "60a2cd11-de6d-42c8-a8f3-66f185db2012",
+        "feature_t": "unit",
+        "category": "it_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "マルチメディア実習室",
+        "name_en": "multimedia laboratory",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678014230804848, 35.498604202722603],
+              [139.678014230950538, 35.498675333523309],
+              [139.678162695529124, 35.498675333228661],
+              [139.678162695252581, 35.498604202615198],
+              [139.678014230804848, 35.498604202722603]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "b5f4500f-60fa-423c-b05b-70fc1bd65439",
+        "feature_t": "unit",
+        "category": "it_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "ハードウェア実習室",
+        "name_en": "hardware laboratory",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678162695529124, 35.498675333228661],
+              [139.678263718864628, 35.498675332923732],
+              [139.678263718499039, 35.498604202172437],
+              [139.678162695252581, 35.498604202615198],
+              [139.678162695529124, 35.498675333228661]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4a271665-644b-4513-9c99-615dacfc49b7",
+        "feature_t": "unit",
+        "category": "preparation_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "情報実習準備室2",
+        "name_en": "information preparationroom 2",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678263718864628, 35.498675332923732],
+              [139.678315627315385, 35.498675332734152],
+              [139.678315627242398, 35.498662715807889],
+              [139.678315627106372, 35.498639193761257],
+              [139.678315626904009, 35.498604201993139],
+              [139.678263718499039, 35.498604202172437],
+              [139.678263718864628, 35.498675332923732]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1605e57b-647c-4b58-92e5-d6a4bab44cbe",
+        "feature_t": "unit",
+        "category": "it_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "情報基礎実習室",
+        "name_en": "information basics room",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.67801423099462, 35.498696872470305],
+              [139.67801423114031, 35.498768000362141],
+              [139.67816269588937, 35.4987680000675],
+              [139.678162695612855, 35.49869687217565],
+              [139.67801423099462, 35.498696872470305]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9b1d48ba-8b30-490b-bd0c-3c1b99109095",
+        "feature_t": "unit",
+        "category": "studio_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "プレゼンテーションスタジオ2",
+        "name_en": "presentation studio 2",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678162695612855, 35.49869687217565],
+              [139.67816269588937, 35.4987680000675],
+              [139.678315627851276, 35.498767999572983],
+              [139.678315627439929, 35.498696871681133],
+              [139.678162695612855, 35.49869687217565]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "b3226912-1133-4510-8e52-8c51baffd07c",
+        "feature_t": "unit",
+        "category": "preparation_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "スタジオ準備室",
+        "name_en": "studio preparation room",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678315627439929, 35.498696871681133],
+              [139.678315627851276, 35.498767999572983],
+              [139.678369368672406, 35.498767999353177],
+              [139.67836936821368, 35.498696871461327],
+              [139.678315627439929, 35.498696871681133]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "0b0c359e-737b-4961-bf48-80210365e299",
+        "feature_t": "unit",
+        "category": "studio_room",
+        "restricte": null,
+        "access": null,
+        "name_ja": "プレゼンテーションスタジオ1",
+        "name_en": "presentation studio 1",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.67836936821368, 35.498696871461327],
+              [139.678369368672406, 35.498767999353177],
+              [139.678517804694792, 35.498767998621709],
+              [139.678517804105212, 35.498696870729859],
+              [139.67836936821368, 35.498696871461327]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "0697cfb4-4aac-4bdf-91c8-69dd0bfc5bff",
+        "feature_t": "unit",
+        "category": "classroom",
+        "restricte": null,
+        "access": null,
+        "name_ja": "CALL教室4",
+        "name_en": "CALL classroom 4",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678517804105212, 35.498696870729859],
+              [139.678517804694792, 35.498767998621709],
+              [139.678619109571372, 35.498767998017641],
+              [139.678619108892519, 35.498696870125812],
+              [139.678517804105212, 35.498696870729859]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "07c93aa8-015b-4576-a229-251cfd24a5ef",
+        "feature_t": "unit",
+        "category": "classroom",
+        "restricte": null,
+        "access": null,
+        "name_ja": "CALL教室3",
+        "name_en": "CALL classroom 3",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678619108892519, 35.498696870125812],
+              [139.678619109571372, 35.498767998017641],
+              [139.678718269539615, 35.498767997344018],
+              [139.678718270737448, 35.498760375902954],
+              [139.678718279405388, 35.498705223523338],
+              [139.678718268773366, 35.498696869452168],
+              [139.678619108892519, 35.498696870125812]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "16504cf3-9ee9-4c27-974b-5159c6ff79df",
+        "feature_t": "unit",
+        "category": "concrete",
+        "restricte": null,
+        "access": null,
+        "name_ja": "壁",
+        "name_en": "wall",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678758702506883, 35.498219511333815],
+              [139.678758702046736, 35.498178698573739],
+              [139.678742996355226, 35.498178698691127],
+              [139.678742996807387, 35.498219511451211],
+              [139.678758702506883, 35.498219511333815]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "c3b0aa2a-c554-43fd-a1e8-2b526e28db1d",
+        "feature_t": "unit",
+        "category": "concrete",
+        "restricte": null,
+        "access": null,
+        "name_ja": "壁",
+        "name_en": "wall",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678758702651663, 35.498232354988723],
+              [139.678742996949694, 35.498232355106119],
+              [139.678742997486296, 35.4982807887422],
+              [139.67875870319773, 35.498280788624804],
+              [139.678758702651663, 35.498232354988723]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ce9719ba-8610-4b6d-aeb6-3968967e0c18",
+        "feature_t": "unit",
+        "category": "concrete",
+        "restricte": null,
+        "access": null,
+        "name_ja": "壁",
+        "name_en": "wall",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678315626904009, 35.498604201993139],
+              [139.678315627106372, 35.498639193761257],
+              [139.678345439378944, 35.498639193642276],
+              [139.678345439330684, 35.49863135397176],
+              [139.678326575090011, 35.498631354047895],
+              [139.678326574929315, 35.498604202110315],
+              [139.678315626904009, 35.498604201993139]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "52a6cac8-0344-4455-90cb-edd5983f6cb1",
+        "feature_t": "unit",
+        "category": "terrace",
+        "restricte": null,
+        "access": null,
+        "name_ja": "バルコニー",
+        "name_en": "balcony",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.677846002262356, 35.498276608571906],
+              [139.677846002553309, 35.498214828390651],
+              [139.677846003033721, 35.498112810961459],
+              [139.677817961294579, 35.498112810957501],
+              [139.677817961231568, 35.498276608567956],
+              [139.677846002262356, 35.498276608571906]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "49733c7f-60fd-4c22-ba71-f2dc6f7cd4ba",
+        "feature_t": "unit",
+        "category": "terrace",
+        "restricte": null,
+        "access": null,
+        "name_ja": "バルコニー",
+        "name_en": "balcony",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.677846001876674, 35.498358506924824],
+              [139.677817961200077, 35.498358506920859],
+              [139.677817961137038, 35.498522304524627],
+              [139.67784600110528, 35.498522304528592],
+              [139.677846001396261, 35.498460524352026],
+              [139.677846001876674, 35.498358506924824]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "269973eb-95ff-426c-a04b-e705c2e5f451",
+        "feature_t": "unit",
+        "category": "terrace",
+        "restricte": null,
+        "access": null,
+        "name_ja": "バルコニー",
+        "name_en": "balcony",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.677846000719597, 35.498604202878155],
+              [139.677817961105546, 35.498604202874205],
+              [139.677817961042535, 35.498768000471287],
+              [139.677845999948204, 35.498768000475252],
+              [139.67784599995062, 35.498702903707624],
+              [139.677846000719597, 35.498604202878155]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1e63ac83-88df-417a-b03c-f71effd678da",
+        "feature_t": "unit",
+        "category": "open_to_below",
+        "restricte": null,
+        "access": null,
+        "name_ja": "吹き抜け",
+        "name_en": "opentobelow",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.677846002262356, 35.498276608571906],
+              [139.677874043293144, 35.498276608656973],
+              [139.677874043562667, 35.498214828475703],
+              [139.677846002553309, 35.498214828390651],
+              [139.677846002262356, 35.498276608571906]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "74237056-ecc7-4415-a480-72fbd8d90486",
+        "feature_t": "unit",
+        "category": "open_to_below",
+        "restricte": null,
+        "access": null,
+        "name_ja": "吹き抜け",
+        "name_en": "opentobelow",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.67784600110528, 35.498522304528592],
+              [139.677874042221447, 35.498522304613658],
+              [139.67787404249097, 35.4984605244371],
+              [139.677846001396261, 35.498460524352026],
+              [139.67784600110528, 35.498522304528592]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "da1c462f-ce81-479d-975d-8b35c455dba2",
+        "feature_t": "unit",
+        "category": "open_to_below",
+        "restricte": null,
+        "access": null,
+        "name_ja": "吹き抜け",
+        "name_en": "opentobelow",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.677845999948204, 35.498768000475252],
+              [139.677913921451363, 35.498768000457822],
+              [139.677913921398982, 35.498702903690187],
+              [139.67784599995062, 35.498702903707624],
+              [139.677845999948204, 35.498768000475252]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "0c2ed074-65dc-4920-a0df-3ec226be85f1",
+        "feature_t": "unit",
+        "category": "terrace",
+        "restricte": null,
+        "access": null,
+        "name_ja": "バルコニー",
+        "name_en": "balcony",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678419909433785, 35.498331206292185],
+              [139.678419909248703, 35.498303906847205],
+              [139.678403483387598, 35.49830390692059],
+              [139.678403483567109, 35.498331206365549],
+              [139.678419909433785, 35.498331206292185]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "37847d51-2930-40ad-a607-4d20894be927",
+        "feature_t": "unit",
+        "category": "terrace",
+        "restricte": null,
+        "access": null,
+        "name_ja": "バルコニー",
+        "name_en": "balcony",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678461999002167, 35.498576901964263],
+              [139.678478424922048, 35.498576901882949],
+              [139.678478424717213, 35.498549602439127],
+              [139.678461998802845, 35.498549602520427],
+              [139.678461999002167, 35.498576901964263]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "a5757f22-7551-4831-9ddf-b12cc2790619",
+        "feature_t": "unit",
+        "category": "courtyard",
+        "restricte": null,
+        "access": null,
+        "name_ja": "中庭1",
+        "name_en": "courtyard 1",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.67846199738662, 35.498358505455364],
+              [139.678565463149056, 35.498358504885331],
+              [139.678565462421858, 35.4982766065324],
+              [139.678461996764412, 35.498276607102419],
+              [139.67846199738662, 35.498358505455364]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "69da2cbd-980e-4b5b-831f-81fba9c10c26",
+        "feature_t": "unit",
+        "category": "courtyard",
+        "restricte": null,
+        "access": null,
+        "name_ja": "中庭4",
+        "name_en": "courtyard 4",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.67791392129763, 35.498576903495639],
+              [139.677913921319572, 35.49860420279839],
+              [139.678419911332981, 35.498604201565456],
+              [139.678419911147898, 35.498576902262691],
+              [139.678338804646899, 35.498576902603126],
+              [139.678338804489272, 35.498549603075062],
+              [139.678419910962845, 35.498549602718562],
+              [139.678419910777791, 35.498522303265581],
+              [139.677913921253662, 35.498522304598794],
+              [139.67791392127566, 35.498549604051767],
+              [139.677995016416588, 35.498549603996949],
+              [139.677995016457913, 35.49857690342472],
+              [139.67791392129763, 35.498576903495639]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "d6dbc093-0fd0-4fda-8270-5fa0663a00b9",
+        "feature_t": "unit",
+        "category": "courtyard",
+        "restricte": null,
+        "access": null,
+        "name_ja": "中庭2",
+        "name_en": "courtyard 2",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678419909248703, 35.498303906847219],
+              [139.678419909063649, 35.498276607308398],
+              [139.67821344534488, 35.49827660810918],
+              [139.678115860590339, 35.498276608364463],
+              [139.678056943042407, 35.498276608480396],
+              [139.678015633058209, 35.498276608544508],
+              [139.677913921055989, 35.498276608642115],
+              [139.677913921077959, 35.498303908096197],
+              [139.677995015963887, 35.498303908025342],
+              [139.677995016013313, 35.498331207470315],
+              [139.677913921099929, 35.498331207541199],
+              [139.677913921121899, 35.498358506995011],
+              [139.678419909618839, 35.498358505661827],
+              [139.678419909433785, 35.498331206292185],
+              [139.678403483567109, 35.498331206365549],
+              [139.678403483387598, 35.49830390692059],
+              [139.678419909248703, 35.498303906847219]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "a80782c8-ce51-48c7-8d1b-f2b727317a12",
+        "feature_t": "unit",
+        "category": "courtyard",
+        "restricte": null,
+        "access": null,
+        "name_ja": "中庭3",
+        "name_en": "courtyard 3",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678718267480917, 35.498576900381821],
+              [139.678637160971846, 35.498576900938907],
+              [139.678637160705165, 35.498549601495029],
+              [139.678718267178738, 35.49854960093797],
+              [139.67871826689273, 35.498522301484996],
+              [139.678498007127615, 35.498522302870782],
+              [139.678461998594145, 35.498522303067482],
+              [139.678461998802874, 35.498549602520463],
+              [139.678478424717241, 35.498549602439148],
+              [139.678478424922048, 35.498576901882963],
+              [139.678461999002167, 35.498576901964263],
+              [139.678461999210867, 35.498604201416967],
+              [139.678508997403611, 35.498604201160731],
+              [139.678718267775025, 35.498604199834553],
+              [139.678718267480917, 35.498576900381821]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "57ad97e1-280d-4ef0-8844-2ebe7a410db7",
+        "feature_t": "unit",
+        "category": "concrete",
+        "restricte": null,
+        "access": null,
+        "name_ja": "壁",
+        "name_en": "wall",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.677953436672027, 35.498213724947774],
+              [139.677981495133537, 35.498213724920205],
+              [139.677981495120008, 35.498205477911469],
+              [139.677953436663785, 35.498205477933496],
+              [139.677953436672027, 35.498213724947774]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9da0dbef-dc42-4af5-b730-b95b1bd8bbbd",
+        "feature_t": "unit",
+        "category": "office",
+        "restricte": null,
+        "access": null,
+        "name_ja": "司書室",
+        "name_en": "secretary's office",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678115860590367, 35.498276608364485],
+              [139.67821344534488, 35.49827660810918],
+              [139.67821344504469, 35.498205477433842],
+              [139.678115860376153, 35.498205477669821],
+              [139.678115860590367, 35.498276608364485]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "774f0354-860d-4592-8e84-de97232a7e55",
+        "feature_t": "unit",
+        "category": "stairs",
+        "restricte": null,
+        "access": null,
+        "name_ja": "階段",
+        "name_en": "stairs",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678613278080206, 35.498205475563672],
+              [139.678565461811331, 35.498205475847605],
+              [139.678565462421858, 35.4982766065324],
+              [139.678613278753915, 35.498276606238989],
+              [139.678613278080206, 35.498205475563672]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "52097e4a-2d89-475b-8080-d4ba37a9371a",
+        "feature_t": "unit",
+        "category": "stairs",
+        "restricte": null,
+        "access": null,
+        "name_ja": "階段",
+        "name_en": "stairs",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678015632911325, 35.49820547786917],
+              [139.678015633058209, 35.498276608544508],
+              [139.678056943042407, 35.498276608480396],
+              [139.678056942859115, 35.49820547780508],
+              [139.678015632911325, 35.49820547786917]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "913287b3-1706-4da5-9f56-76d9325f93ed",
+        "feature_t": "unit",
+        "category": "stairs",
+        "restricte": null,
+        "access": null,
+        "name_ja": "階段",
+        "name_en": "stairs",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.677913921099929, 35.498331207541199],
+              [139.677995016013313, 35.498331207470315],
+              [139.677995015963887, 35.498303908025342],
+              [139.677913921077959, 35.498303908096197],
+              [139.677913921099929, 35.498331207541199]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "e67d553b-739f-4cb5-afd7-b27d2f92a635",
+        "feature_t": "unit",
+        "category": "stairs",
+        "restricte": null,
+        "access": null,
+        "name_ja": "階段",
+        "name_en": "stairs",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678637160971846, 35.498576900938907],
+              [139.678718267480917, 35.498576900381821],
+              [139.678718267186838, 35.498549600937977],
+              [139.678637160705165, 35.498549601495029],
+              [139.678637160971846, 35.498576900938907]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2153fb4e-e039-4e8a-ba1e-6a9f6c2b453d",
+        "feature_t": "unit",
+        "category": "stairs",
+        "restricte": null,
+        "access": null,
+        "name_ja": "階段",
+        "name_en": "stairs",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678338804646899, 35.498576902603126],
+              [139.678419911147898, 35.498576902262705],
+              [139.678419910962845, 35.498549602718562],
+              [139.678338804489272, 35.498549603075062],
+              [139.678338804646899, 35.498576902603126]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4e0e1a09-2c65-4f86-a672-67e5a39fa02e",
+        "feature_t": "unit",
+        "category": "stairs",
+        "restricte": null,
+        "access": null,
+        "name_ja": "階段",
+        "name_en": "stairs",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.67791392129763, 35.498576903495639],
+              [139.677995016457913, 35.49857690342472],
+              [139.677995016416588, 35.498549603996949],
+              [139.67791392127566, 35.498549604051767],
+              [139.67791392129763, 35.498576903495639]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "6134b915-4785-40fe-b9ca-4aa2b48df747",
+        "feature_t": "unit",
+        "category": "terrace",
+        "restricte": null,
+        "access": null,
+        "name_ja": "ベランダ",
+        "name_en": "balcony",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678718270737448, 35.498760375902954],
+              [139.67874300280215, 35.498760375727116],
+              [139.678743012730905, 35.498705226120322],
+              [139.678718279405388, 35.498705223523338],
+              [139.678718270737448, 35.498760375902954]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "5434e7cf-52db-4563-bbe5-78cfce00f40f",
+        "feature_t": "unit",
+        "category": "information_lounge",
+        "restricte": null,
+        "access": null,
+        "name_ja": "情報ラウンジS2",
+        "name_en": "information launge S2",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678565462421858, 35.4982766065324],
+              [139.678565461690937, 35.498194241705036],
+              [139.678419908481317, 35.498194242481041],
+              [139.678419909063649, 35.498276607308398],
+              [139.678565462421858, 35.4982766065324]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "b1723e5d-9b9f-448a-98f9-49ce3dd32af3",
+        "feature_t": "unit",
+        "category": "lounge",
+        "restricte": null,
+        "access": null,
+        "name_ja": "ラウンジS2",
+        "name_en": "launge S2",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.677846002553309, 35.498214828390651],
+              [139.677913920529676, 35.498214828585468],
+              [139.677913920924226, 35.498112811156219],
+              [139.677846003033721, 35.498112810961437],
+              [139.677846002553309, 35.498214828390651]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8de11309-b93f-4954-80c3-409aeff4df80",
+        "feature_t": "unit",
+        "category": "lounge",
+        "restricte": null,
+        "access": null,
+        "name_ja": "ラウンジC2",
+        "name_en": "launge C2",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.677846001396261, 35.498460524352019],
+              [139.677913921160297, 35.498460524546815],
+              [139.677913921554847, 35.498358507119555],
+              [139.677846001876674, 35.498358506924802],
+              [139.677846001396261, 35.498460524352019]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "d85f6bb3-b951-4dbd-a533-5dc42354e0ed",
+        "feature_t": "unit",
+        "category": "lounge",
+        "restricte": null,
+        "access": null,
+        "name_ja": "ラウンジN2",
+        "name_en": "launge N2",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.677846000719597, 35.498604202878198],
+              [139.67784600025476, 35.498702903707624],
+              [139.677913921398982, 35.498702903690187],
+              [139.677913921319544, 35.498604202860747],
+              [139.677846000719597, 35.498604202878198]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "d2b2c716-150f-43e8-be0a-9ebf026e9571",
+        "feature_t": "unit",
+        "category": "lounge",
+        "restricte": null,
+        "access": null,
+        "name_ja": "ラウンジC22",
+        "name_en": "launge C22",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678419910274528, 35.498451172593178],
+              [139.678419910777791, 35.498522303265581],
+              [139.678498007127615, 35.498522302870782],
+              [139.678498006555515, 35.49845117219833],
+              [139.678419910274528, 35.498451172593178]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "0d93cf63-c3b6-44a8-8c9e-0865727e2f8e",
+        "feature_t": "unit",
+        "category": "lounge",
+        "restricte": null,
+        "access": null,
+        "name_ja": "ラウンジN22",
+        "name_en": "launge N22",
+        "alt_name": null,
+        "display_po": null,
+        "level_id": "16ec25bd-4a38-4e06-94c2-4edbfe85a717"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [139.678419911814615, 35.498675250990523],
+              [139.678508997985432, 35.498675331831365],
+              [139.678508997679472, 35.498639192890906],
+              [139.678419911570217, 35.498639193327655],
+              [139.678419911814615, 35.498675250990523]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
