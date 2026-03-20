@@ -36,8 +36,11 @@ jobs:
           VERSION=${GITHUB_REF#refs/tags/}
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
+      - name: convert geojson
+        run: node transformer/transform.js
+
       - name: Build release
-        run: node scripts/build-release.js ${{ steps.version.outputs.version }}
+        run: node builder/build-release.js ${{ steps.version.outputs.version }}
 
       - name: Checkout gh-pages
         uses: actions/checkout@v4
