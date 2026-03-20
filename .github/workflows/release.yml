@@ -58,7 +58,7 @@ jobs:
 
       - name: Update latest.json
         run: |
-          node scripts/update-latest.js ${{ steps.version.outputs.version }}
+          node builder/update-latest.js ${{ steps.version.outputs.version }}
           rm -f gh-pages/meta/latest.json
           mkdir -p gh-pages/meta
           
