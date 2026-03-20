@@ -8,125 +8,125 @@
       "sha256": "2f311501337efbecc70e38caf7a530bc874bd378f36b349d461d3e615a1c1b23",
       "size": 343
     },
-    "data_imdf_interact_buildings_buildings": {
-      "logicalId": "data_imdf_interact_buildings_buildings",
-      "relativePath": "data/imdf/interact/buildings/buildings.json",
-      "sha256": "448dec3ff332c20467cd7ee8e05c73adc2532e16c71941aaa214e6c9d589a1d0",
-      "size": 590
+    "data_imdf_interact_footprint": {
+      "logicalId": "data_imdf_interact_footprint",
+      "relativePath": "data/imdf/interact/footprint.json",
+      "sha256": "b2bd8cdc03b8249eea3867232534687d99dc57a096e0490096fa121ccfd099e8",
+      "size": 895
     },
-    "data_imdf_interact_footprints_footprints": {
-      "logicalId": "data_imdf_interact_footprints_footprints",
-      "relativePath": "data/imdf/interact/footprints/footprints.json",
-      "sha256": "27a5515ada1c14db1bb3d5ada4136eb285d77b1dba488714928a0b6be24ac740",
-      "size": 714
+    "data_imdf_interact_levels_floor1": {
+      "logicalId": "data_imdf_interact_levels_floor1",
+      "relativePath": "data/imdf/interact/levels/floor1.json",
+      "sha256": "dceaf8701b434e6f382414696fbd259b01e17c146487c304f6feaca99f5dd8d9",
+      "size": 3695
     },
-    "data_imdf_studyhall_buildings_buildings": {
-      "logicalId": "data_imdf_studyhall_buildings_buildings",
-      "relativePath": "data/imdf/studyhall/buildings/buildings.json",
-      "sha256": "3795f53d36b4e8e080009c52bbc236a76768596c998fee140bb358f233749148",
-      "size": 584
+    "data_imdf_interact_levels_floor2": {
+      "logicalId": "data_imdf_interact_levels_floor2",
+      "relativePath": "data/imdf/interact/levels/floor2.json",
+      "sha256": "1a0d583136d5f517f4948c22d08bdf4fa423649aa19beb63f7c1f86d4e780768",
+      "size": 3969
     },
-    "data_imdf_studyhall_footprints_footprints": {
-      "logicalId": "data_imdf_studyhall_footprints_footprints",
-      "relativePath": "data/imdf/studyhall/footprints/footprints.json",
-      "sha256": "9d71a0c9e4fa5f178d3eb11b36db90155a94e9ee74b7927d100b84d89ab9d2b7",
-      "size": 1665
+    "data_imdf_interact_units_floor1": {
+      "logicalId": "data_imdf_interact_units_floor1",
+      "relativePath": "data/imdf/interact/units/floor1.json",
+      "sha256": "7cdce473a6323087470b5a301b79004e326b28f41567659a49315f9b6a6072c4",
+      "size": 26904
     },
-    "data_imdf_studyhall_levels_floor1": {
-      "logicalId": "data_imdf_studyhall_levels_floor1",
-      "relativePath": "data/imdf/studyhall/levels/floor1.json",
-      "sha256": "6192ab57c5ed93a590cb3cbd882635bf9b19650311533cc489764c15e365b642",
-      "size": 1753
+    "data_imdf_interact_units_floor2": {
+      "logicalId": "data_imdf_interact_units_floor2",
+      "relativePath": "data/imdf/interact/units/floor2.json",
+      "sha256": "2b69f7f3b63036368e24736831dd9d90f66755c4c21a71e5d853fa3ce88b77cb",
+      "size": 35117
     },
-    "data_imdf_studyhall_levels_floor2": {
-      "logicalId": "data_imdf_studyhall_levels_floor2",
-      "relativePath": "data/imdf/studyhall/levels/floor2.json",
-      "sha256": "3256b52bb36b92cd9c1bacfdae4c45e6713e8827054cff456a786678cab4207c",
-      "size": 1753
+    "data_imdf_interact_units_floor3": {
+      "logicalId": "data_imdf_interact_units_floor3",
+      "relativePath": "data/imdf/interact/units/floor3.json",
+      "sha256": "450ea383353d26f3ba6ba2c0654df7bd54d1595f79452f50e649f25146069a11",
+      "size": 178
     },
-    "data_imdf_studyhall_levels_floor3": {
-      "logicalId": "data_imdf_studyhall_levels_floor3",
-      "relativePath": "data/imdf/studyhall/levels/floor3.json",
-      "sha256": "c589e015c9a1d4c62f005f26f23cc2bf5fd363147bfbd4340d45f716bb6c9751",
-      "size": 1753
+    "data_imdf_studyhall_footprint": {
+      "logicalId": "data_imdf_studyhall_footprint",
+      "relativePath": "data/imdf/studyhall/footprint.json",
+      "sha256": "ab9bf2a3114d7771e03b7ae382d38442faf664a23f1c0882742c419c26756fc4",
+      "size": 2041
     },
-    "data_imdf_studyhall_levels_floor4": {
-      "logicalId": "data_imdf_studyhall_levels_floor4",
-      "relativePath": "data/imdf/studyhall/levels/floor4.json",
-      "sha256": "0265c2df38da1c0c58c104450fa04a284d8ff058db00ae7f588fa3ae20d17289",
-      "size": 1078
+    "data_imdf_studyhall_levels_floor1-3": {
+      "logicalId": "data_imdf_studyhall_levels_floor1-3",
+      "relativePath": "data/imdf/studyhall/levels/floor1-3.json",
+      "sha256": "77e383685c9755f1f5f9e75dd02a14873ee5175e41dee9f6b880c3560195f516",
+      "size": 2302
     },
-    "data_imdf_studyhall_levels_floor5": {
-      "logicalId": "data_imdf_studyhall_levels_floor5",
-      "relativePath": "data/imdf/studyhall/levels/floor5.json",
-      "sha256": "d03acac600f690de0638aef417955f31b6f52a8a3f104ec11170ec6b20094304",
-      "size": 1078
+    "data_imdf_studyhall_levels_floor4-5": {
+      "logicalId": "data_imdf_studyhall_levels_floor4-5",
+      "relativePath": "data/imdf/studyhall/levels/floor4-5.json",
+      "sha256": "9b3e0ef1a56b6abb65fed98164dab397d3ff093a6c9cea27b8f55f3303996642",
+      "size": 961
     },
     "data_imdf_studyhall_sections_floor1": {
       "logicalId": "data_imdf_studyhall_sections_floor1",
       "relativePath": "data/imdf/studyhall/sections/floor1.json",
-      "sha256": "06a207e5f5ffc8902e79ac7aa7ec24bbf6833e6ca35aa04a249ededbb48c4ba8",
-      "size": 6959
+      "sha256": "d6ec05ebb4f08c089833d95774f149d41e16709d66a2840117ae72cd11cfd2c8",
+      "size": 12281
     },
     "data_imdf_studyhall_sections_floor2": {
       "logicalId": "data_imdf_studyhall_sections_floor2",
       "relativePath": "data/imdf/studyhall/sections/floor2.json",
-      "sha256": "bf67537381c18f17130986d4141c7b7698944376bf063d8fb03e532336842678",
-      "size": 12258
+      "sha256": "3c712e8c0344c517da36ab0260e1de015665187027062c2bf082d40221d41108",
+      "size": 22817
     },
     "data_imdf_studyhall_sections_floor3": {
       "logicalId": "data_imdf_studyhall_sections_floor3",
       "relativePath": "data/imdf/studyhall/sections/floor3.json",
-      "sha256": "7582587152ac2e448ab0c9edbef5784eeff59ac56a524c2d62b9ce0bf047392a",
-      "size": 11144
+      "sha256": "4dfe3a1b8a32d09f7a4572c142679d9c2338d59efa40f18d387ca9c7b4f4c484",
+      "size": 20653
     },
     "data_imdf_studyhall_sections_floor4": {
       "logicalId": "data_imdf_studyhall_sections_floor4",
       "relativePath": "data/imdf/studyhall/sections/floor4.json",
-      "sha256": "d3980f8a7f65972b7091227d8d8847ff7e71f4413bcf45de228d259451c380d5",
-      "size": 3251
+      "sha256": "b0e878cafe6f60de8d7a36281ee96a09f414872c6f363ee0d20762a5b529233d",
+      "size": 5390
     },
     "data_imdf_studyhall_sections_floor5": {
       "logicalId": "data_imdf_studyhall_sections_floor5",
       "relativePath": "data/imdf/studyhall/sections/floor5.json",
-      "sha256": "29a57cc6ff7ba19b064db7981e0f381f12f5a9279e401d9268200855164a590b",
-      "size": 3615
+      "sha256": "da65d87b135041dbcb2dd0b3ddc9d4f4a129ffc3093cf0a089428a2a68d692bc",
+      "size": 6103
+    },
+    "data_imdf_studyhall_stairs": {
+      "logicalId": "data_imdf_studyhall_stairs",
+      "relativePath": "data/imdf/studyhall/stairs.json",
+      "sha256": "53cd7da1be18689c3152188dddcccc871d134076a6fef3bad456a2dda2b1fe5c",
+      "size": 53658
     },
     "data_imdf_studyhall_units_floor1": {
       "logicalId": "data_imdf_studyhall_units_floor1",
       "relativePath": "data/imdf/studyhall/units/floor1.json",
-      "sha256": "eae2b7daabde20769d82404f97a6f964e333b38e19f3b8f7d456bccc835c6165",
-      "size": 79426
+      "sha256": "0546d007a3a53c281e6f5ed904113e1f430a67d9173bfa790a6f4a172316c693",
+      "size": 97572
     },
     "data_imdf_studyhall_units_floor2": {
       "logicalId": "data_imdf_studyhall_units_floor2",
       "relativePath": "data/imdf/studyhall/units/floor2.json",
-      "sha256": "80524727e0dfa850bc75a72bc7b7eb6174eb5aeac25de2cbd4b68fd8955cb11a",
-      "size": 87507
+      "sha256": "87c7c3f86f656200d06eeb6394a12fa458419ce3ec72196d9636fb30feccf8e7",
+      "size": 106861
     },
     "data_imdf_studyhall_units_floor3": {
       "logicalId": "data_imdf_studyhall_units_floor3",
       "relativePath": "data/imdf/studyhall/units/floor3.json",
-      "sha256": "8c85b1d52bfce55d3f1309ec5cae9074534153c668a5cf61bb41bea255684680",
-      "size": 89836
+      "sha256": "d86a417e4201d2a9e46b8af982c14916c57dcd60e1f278ec7d014461c47639c8",
+      "size": 110120
     },
     "data_imdf_studyhall_units_floor4": {
       "logicalId": "data_imdf_studyhall_units_floor4",
       "relativePath": "data/imdf/studyhall/units/floor4.json",
-      "sha256": "3fc63d227b5da8c77c321860c36402643a155f9eb90a521db8b97f5cce93b40f",
-      "size": 31422
+      "sha256": "215c34414f967d9c5d65d6e14b291a0def18b122ff6a90babada6649fd72bee7",
+      "size": 38044
     },
     "data_imdf_studyhall_units_floor5": {
       "logicalId": "data_imdf_studyhall_units_floor5",
       "relativePath": "data/imdf/studyhall/units/floor5.json",
-      "sha256": "c19aac9a3a01667e9962e2d4074b119a56146916491de56b8baecd4f036fcf11",
-      "size": 37911
-    },
-    "data_imdf_studyhall_units_stairs": {
-      "logicalId": "data_imdf_studyhall_units_stairs",
-      "relativePath": "data/imdf/studyhall/units/stairs.json",
-      "sha256": "97b09337f28c22625187edc889be85f505ea57c6f9c54fed6c2e5fc205026e26",
-      "size": 66569
+      "sha256": "9560c91d43c51b3ba2a63effd0a5585f713d8c7de7ad3300b352df5bbaebb5e4",
+      "size": 50020
     },
     "data_imdf_venue_venue": {
       "logicalId": "data_imdf_venue_venue",
