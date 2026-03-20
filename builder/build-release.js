@@ -47,7 +47,7 @@ function createZip(zipPath, dataDir) {
 
     archive.pipe(output);
 
-    archive.directory(dataDir, 'data');
+    archive.directory(dataDir);
 
     archive.finalize();
   })
