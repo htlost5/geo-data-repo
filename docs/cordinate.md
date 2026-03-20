@@ -109,3 +109,14 @@ function toWGS84(x, y) {
 3. アプリ側で変換ロジックの実装
 
 studyhall / interact 用で分割
+
+
+
+QGISの内容再確認
+exports/rawへの出力方法　手動か自動か
+buildロジック（exportsを整形、情報追加して、buildへ）
+buildを対象にgithubへプッシュできるか確認
+
+座標変換ロジックの実装？
+
+ローディングロジックの実装
