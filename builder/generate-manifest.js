@@ -25,7 +25,7 @@ function sha256(filePath) {
 }
 
 function toRelative(base, target) {
-  return path2.relative(base, target).replace(/\\/g, '/');
+  return path2.relative(base, target).replace(/\\/g, '/').replace(/^data\/imdf\//, '');
 }
 
 function toLogicalId(relativePath) {
