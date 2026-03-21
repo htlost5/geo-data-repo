@@ -25,11 +25,11 @@ function sha256(filePath) {
 }
 
 function toRelative(base, target) {
-  return path2.relative(base, target).replace(/\\/g, '/').replace(/^data\/imdf\//, '');
+  return path2.relative(base, target).replace(/\\/g, '/');
 }
 
 function toLogicalId(relativePath) {
-  return relativePath.replace(/\//g, '_').replace(/\.json$/, '');
+  return relativePath.replace(/^data\/imdf\//, '').replace(/\//g, '_').replace(/\.json$/, '');
 }
 
 function generateManifest(rootDir, version) {
