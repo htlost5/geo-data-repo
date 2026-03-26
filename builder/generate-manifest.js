@@ -20,8 +20,9 @@ function walk(dir, baseDir) {
 }
 
 function sha256(filePath) {
-  const data = fs2.readFileSync(filePath);
-  return crypto2.createHash('sha256').update(data).digest('hex');
+  const data = fs2.readFileSync(filePath, 'utf-8');
+  const normalized = data.replace(/^\uFEFF/, '');
+  return crypto2.createHash('sha256').update(normalized, 'utf-8').digest('hex');
 }
 
 function toRelative(base, target) {
