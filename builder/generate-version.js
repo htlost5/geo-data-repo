@@ -1,15 +1,16 @@
 // version情報, manifestSha256
-const fs2 = require('fs');
-const crypto2 = require('crypto');
+const fs2 = require("fs");
+const crypto2 = require("crypto");
+const { sha256 } = require("./generate-manifest");
 
-function generateVersion(version, manifest, MANIFEST_PATH) {
-    const manifestSha256 = crypto2.createHash('sha256').update(JSON.stringify(manifest)).digest('hex');
-    const manifestSize = fs2.statSync(MANIFEST_PATH).size;
-    return {
-        version,
-        manifestSha256,
-        manifestSize
-    };
+function generateVersion(version, MANIFEST_PATH) {
+  const manifestSha256 = sha256(MANIFEST_PATH);
+  const manifestSize = fs2.statSync(MANIFEST_PATH).size;
+  return {
+    version,
+    manifestSha256,
+    manifestSize,
+  };
 }
 
-module.exports = { generateVersion }
+module.exports = { generateVersion };
