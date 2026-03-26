@@ -56,6 +56,7 @@ function generateManifest(rootDir, version) {
   return {
     version,
     count: Object.keys(manifestFiles).length,
+    totalSize: Object.values(manifestFiles).reduce((sum, item) => sum + item.size, 0),
     files: manifestFiles
   };
 }

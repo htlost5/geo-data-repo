@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const archiver = require('archiver');
 const { generateManifest } = require('./generate-manifest');
+const { generateVersion } = require('./generate-version');
 
 const version = process.argv[2];
 if (!version) {
@@ -17,6 +18,7 @@ const RELEASE_ROOT = path.join(__dirname, '..', 'releases', version);
 const DATA_DIR = path.join(RELEASE_ROOT, 'data');
 const DATA_IMDF_DIR = path.join(DATA_DIR, 'imdf');
 const MANIFEST_PATH = path.join(DATA_DIR, 'manifest.json');
+const VERSIONINFO_PATH = path.join(DATA_DIR, 'version.json');
 const ZIP_PATH = path.join(RELEASE_ROOT, `imdf-${version}.zip`);
 
 function copyRecursive(src, dest) {
@@ -61,6 +63,9 @@ async function main() {
 
   const manifest = generateManifest(RELEASE_ROOT, version);
   fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
+  
+  const versionInfo = generateVersion(version, manifest, MANIFEST_PATH);
+  fs.writeFileSync(VERSIONINFO_PATH, JSON.stringify(versionInfo, null, 2));
 
   await createZip(ZIP_PATH, DATA_DIR);
 

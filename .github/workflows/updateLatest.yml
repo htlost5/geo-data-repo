@@ -8,6 +8,10 @@ on:
         required: true
         default: 'v0.0.0'
 
+concurrency:
+  group: gh-pages-meta
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -16,24 +20,47 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: npm install
+
       - name: Checkout gh-pages
         uses: actions/checkout@v4
         with:
           ref: gh-pages
           path: gh-pages
           fetch-depth: 0
+      
+      - name: Check version exists
+        run: |
+          if [ ! -d "gh-pages/releases/${{ github.event.inputs.version }}" ]; then
+            echo "Version does not exist!"
+            exit 1
+          fi
 
       - name: Update latest.json
         run: |
+          node builder/update-latest.js ${{ github.event.inputs.version }}
+          rm -f gh-pages/meta/latest.json
           mkdir -p gh-pages/meta
-          echo "{\"version\": \"${{ github.event.inputs.version }}\", \"srcFolder\": \"/releases/${{ github.event.inputs.version }}\"}" \
-            > gh-pages/meta/latest.json
+
+          cp meta/latest.json gh-pages/meta/latest.json
 
       - name: Commit & Push
         working-directory: gh-pages
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "actions@github.com"
+
           git add meta/latest.json
           git commit -m "Update latest.json to ${{ github.event.inputs.version }}" || echo "No changes"
           git push origin gh-pages
