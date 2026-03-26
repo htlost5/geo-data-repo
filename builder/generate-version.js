@@ -1,6 +1,5 @@
 // version情報, manifestSha256
 const fs2 = require("fs");
-const crypto2 = require("crypto");
 const { sha256 } = require("./generate-manifest");
 
 function generateVersion(version, MANIFEST_PATH) {
