@@ -64,7 +64,7 @@ async function main() {
   const manifest = generateManifest(RELEASE_ROOT, version);
   fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
   
-  const versionInfo = generateVersion(version, manifest, MANIFEST_PATH);
+  const versionInfo = generateVersion(version, MANIFEST_PATH);
   fs.writeFileSync(VERSIONINFO_PATH, JSON.stringify(versionInfo, null, 2));
 
   await createZip(ZIP_PATH, DATA_DIR);
