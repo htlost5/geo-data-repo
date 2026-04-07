@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "8466858d-493f-453c-84c4-9b30ce7036f2",
+      "type": "Feature",
+      "feature_type": "venue",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [139.67883880103247, 35.498982890183505],
+            [139.67781642790175, 35.499008878841245],
+            [139.67773615790088, 35.49833349433176],
+            [139.6777698344899, 35.49743521376045],
+            [139.67795179684123, 35.49676047874949],
+            [139.67881566151175, 35.49681676811788],
+            [139.67891783075663, 35.49646331306419],
+            [139.67943967082215, 35.496546537511016],
+            [139.67883880103247, 35.498982890183505]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "university",
+        "restriction": null,
+        "name": {
+          "ja": "横浜サイエンスフロンティア高等学校",
+          "en": "Yokohama Science Frontier Highschool"
+        },
+        "alt_name": { "ja": "サイフロ" },
+        "hours": null,
+        "phone": null,
+        "website": "https://www.edu.city.yokohama.lg.jp/school/hs/sfh/",
+        "display_point": {
+          "type": "Point",
+          "coordinates": [139.6784895108818, 35.49777179199512]
+        },
+        "address_id": "e720f458-b46f-4566-938b-8d43e95861c2"
+      }
+    }
+  ]
+}
